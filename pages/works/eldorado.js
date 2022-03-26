@@ -18,16 +18,17 @@ const Work = () => (
         working in four units distributed throughout Brazil, located in
         Brasília, Campinas, Manaus and Porto Alegre. Besides contributing to the
         digital transformation of companies, our purpose is to develop the
-        country's technological ecosystem, focusing on Open Innovation projects.
-        We create disruptive solutions for markets such as IT/Telecom, Energy,
-        Agribusiness, Oil&Gas, Health, Automotive, among others, and present
-        success cases in emerging technologies, such as Artificial Intelligence,
-        Computer Vision, Computer Graphics, Virtual and Augmented Reality,
-        Virtual Assistants and Voice Interface, Big Data and Analytics, Embedded
-        Systems, IoT and Blockchain. Throughout these years, we have formed and
-        strengthened an extensive portfolio of clients, which includes large
-        national and international companies, besides being constantly present
-        in rankings of the best companies to work for in Brazil.
+        country&apos;s technological ecosystem, focusing on Open Innovation
+        projects. We create disruptive solutions for markets such as IT/Telecom,
+        Energy, Agribusiness, Oil&Gas, Health, Automotive, among others, and
+        present success cases in emerging technologies, such as Artificial
+        Intelligence, Computer Vision, Computer Graphics, Virtual and Augmented
+        Reality, Virtual Assistants and Voice Interface, Big Data and Analytics,
+        Embedded Systems, IoT and Blockchain. Throughout these years, we have
+        formed and strengthened an extensive portfolio of clients, which
+        includes large national and international companies, besides being
+        constantly present in rankings of the best companies to work for in
+        Brazil.
       </P>
       <List ml={4} my={4}>
         <ListItem>
