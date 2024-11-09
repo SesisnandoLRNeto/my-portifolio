@@ -29,7 +29,7 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hello everyone, I&apos;m a full-stack developer based in Brazil!
+          Hi there! I&apos;m a passionate full-stack developer from Brazil, dedicated to crafting impactful software solutions.
         </Box>
 
         <Box display={{ md: "flex" }}>
@@ -63,10 +63,7 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Sesisnando is a code-loving Software Engineer, full-stack developer
-            and a full passion for building digital solutions he wants. He
-            believes it is possible to change the world with code. When it is
-            not coding, he loves to play games and gather with his friends.
+          Sesisnando is a dedicated Software Engineer and full-stack developer with a deep passion for creating impactful digital solutions. He believes in the power of code to make a difference and enjoys tackling challenges head-on. When he's not coding, you'll find him playing games or spending quality time with friends.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works" passHref>
@@ -81,31 +78,40 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Bio
           </Heading>
+
           <BioSection>
             <BioYear>2019</BioYear>
-            Graduated in Software Engineer at Federal University of Amazonas
-            (UFAM)
+            Graduated with a degree in Software Engineering from the Federal University of Amazonas (UFAM).
           </BioSection>
+
           <BioSection>
             <BioYear>2019</BioYear>
-            Worked at Information System Management (GESIN/SEDUC-AM)
+            Developed information systems at the Department of Education (GESIN/SEDUC-AM).
           </BioSection>
+
           <BioSection>
             <BioYear>2020</BioYear>
-            Worked at ApoemaFabSoft
+            Innovated solutions at ApoemaFabSoft.
           </BioSection>
+
           <BioSection>
             <BioYear>2021</BioYear>
-            Worked at Creathus Institute
+            Contributed to various projects at Creathus Institute.
           </BioSection>
+
           <BioSection>
             <BioYear>2021</BioYear>
-            Completed in the MBA in Full stack web Development at Information
-            Technology Management Institute (IGTI)
+            Earned an MBA in Full-Stack Web Development from IGTI.
           </BioSection>
+
           <BioSection>
             <BioYear>2021 to Present</BioYear>
-            Work at Eldorado Institute
+            Building impactful tech solutions at Eldorado Institute.
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2024</BioYear>
+            Building software solution at Ingresse Company from Latin America.
           </BioSection>
         </Section>
 
@@ -114,7 +120,7 @@ const Page = () => {
             I &#9829;
           </Heading>
           <Paragraph>
-            Art, Music, Guitar, Blockchain, RPG and Board Games
+          When I'm not coding, I love diving into the world of heavy metal, playing guitar, exploring new technologies using AI and enjoying RPG and Board Games with friends.
           </Paragraph>
         </Section>
 

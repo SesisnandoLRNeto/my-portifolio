@@ -5,7 +5,7 @@ import P from "../../components/paragraph"
 import Layout from "../../components/layouts/article"
 
 const Work = () => (
-  <Layout title="Eldorado">
+  <Layout title="Creathus">
     <Container>
       <Title>
         Creathus <Badge>2020-</Badge>
@@ -33,7 +33,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Springboot, VueJS and React</span>
+          <span>Springboot, VueJS and ReactJs</span>
         </ListItem>
       </List>
 
