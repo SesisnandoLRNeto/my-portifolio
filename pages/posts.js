@@ -1,8 +1,10 @@
-import { Container, Heading } from "@chakra-ui/react"
+import { Container, Heading, SimpleGrid } from "@chakra-ui/react"
+import { GridItem } from "../components/grid-items"
 
 import Layout from "../components/layouts/article"
 import Section from "../components/section"
-import Paragraph from "../components/paragraph"
+
+import thumbnailBloomTaxonomy from "../public/images/deepen-learning.png"
 
 const Posts = () => (
   <Layout title="Posts">
@@ -12,14 +14,13 @@ const Posts = () => (
       </Heading>
 
       <Section delay={0.1}>
-        <Paragraph>Coming soon!!</Paragraph>
-        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="Example"
-            thumbnail={thumbnailExample}
-            href="https://www.link.com"
+            title="A Step-by-Step Approach to Master Complex Topics"
+            thumbnail={thumbnailBloomTaxonomy}
+            href="https://medium.com/@nandolrneto/a-step-by-step-approach-to-master-complex-topics-0f9063ae622a"
           />
-        </SimpleGrid> */}
+        </SimpleGrid>
       </Section>
     </Container>
   </Layout>

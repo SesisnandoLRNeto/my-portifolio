@@ -127,9 +127,9 @@ const Page = () => {
             I &#9829;
           </Heading>
           <Paragraph>
-            When Ivm not coding, I love diving into the world of heavy metal,
-            playing guitar, exploring new technologies using AI and enjoying RPG
-            and Board Games with friends.
+            When I&apos;m not coding, I love diving into the world of heavy
+            metal, playing guitar, exploring new technologies using AI and
+            enjoying RPG and Board Games with friends.
           </Paragraph>
         </Section>
 
