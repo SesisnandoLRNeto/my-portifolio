@@ -95,7 +95,7 @@ const VoxelDesktop = () => {
       const extraDirectionalLight = new THREE.DirectionalLight(0xffffff, 7)
       extraDirectionalLight.position.set(-5, 5, -5)
       scene.add(extraDirectionalLight)
-
+''
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
       controls.target = target

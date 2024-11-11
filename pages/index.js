@@ -38,7 +38,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Sesisnando Rodrigues
             </Heading>
-            <p>(Developer)</p>
+            <p>(Full Stack Engineer)</p>
           </Box>
           <Box
             flexShrink={0}
