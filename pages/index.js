@@ -29,7 +29,8 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hi there! I&apos;m a passionate full-stack developer from Brazil, dedicated to crafting impactful software solutions.
+          Hi there! I&apos;m a passionate full-stack developer from Brazil,
+          dedicated to crafting impactful software solutions.
         </Box>
 
         <Box display={{ md: "flex" }}>
@@ -63,7 +64,11 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-          Sesisnando is a dedicated Software Engineer and full-stack developer with a deep passion for creating impactful digital solutions. He believes in the power of code to make a difference and enjoys tackling challenges head-on. When he's not coding, you'll find him playing games or spending quality time with friends.
+            Sesisnando is a dedicated Software Engineer and full-stack developer
+            with a deep passion for creating impactful digital solutions. He
+            believes in the power of code to make a difference and enjoys
+            tackling challenges head-on. When he&apos;s not coding, you&apos;ll
+            find him playing games or spending quality time with friends.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works" passHref>
@@ -81,12 +86,14 @@ const Page = () => {
 
           <BioSection>
             <BioYear>2019</BioYear>
-            Graduated with a degree in Software Engineering from the Federal University of Amazonas (UFAM).
+            Graduated with a degree in Software Engineering from the Federal
+            University of Amazonas (UFAM).
           </BioSection>
 
           <BioSection>
             <BioYear>2019</BioYear>
-            Developed information systems at the Department of Education (GESIN/SEDUC-AM).
+            Developed information systems at the Department of Education
+            (GESIN/SEDUC-AM).
           </BioSection>
 
           <BioSection>
@@ -120,7 +127,9 @@ const Page = () => {
             I &#9829;
           </Heading>
           <Paragraph>
-          When I'm not coding, I love diving into the world of heavy metal, playing guitar, exploring new technologies using AI and enjoying RPG and Board Games with friends.
+            When Ivm not coding, I love diving into the world of heavy metal,
+            playing guitar, exploring new technologies using AI and enjoying RPG
+            and Board Games with friends.
           </Paragraph>
         </Section>
 

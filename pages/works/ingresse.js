@@ -56,11 +56,11 @@ const Work = () => (
         for event ticketing systems, with a strong focus on user experience and
         performance to ensure a seamless purchasing process. ReactJS: Built
         modular and responsive web applications for ticketing platforms,
-        leveraging React's component-based architecture to support high traffic
-        and scalability during peak sales periods. AWS: Utilized Amazon Web
-        Services to deploy, manage, and scale event ticketing systems, ensuring
-        reliability, security, and efficiency in handling large volumes of
-        transactions.
+        leveraging React&apos;s component-based architecture to support high
+        traffic and scalability during peak sales periods. AWS: Utilized Amazon
+        Web Services to deploy, manage, and scale event ticketing systems,
+        ensuring reliability, security, and efficiency in handling large volumes
+        of transactions.
       </P>
 
       <br />
