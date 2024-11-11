@@ -1,4 +1,11 @@
-import { Container, Badge, Link, List, ListItem } from "@chakra-ui/react"
+import {
+  Container,
+  Badge,
+  Link,
+  List,
+  ListItem,
+  Heading
+} from "@chakra-ui/react"
 import { ExternalLinkIcon } from "@chakra-ui/icons"
 import { Title, WorkImage, Meta } from "../../components/work"
 import P from "../../components/paragraph"
@@ -32,10 +39,33 @@ const Work = () => (
           <span>Windows/macOS/Linux/iOS/Android</span>
         </ListItem>
         <ListItem>
+          <Meta>Role</Meta>
+          <span> Fullstack developer</span>
+        </ListItem>
+        <ListItem>
           <Meta>Stack</Meta>
           <span>Springboot, VueJS and ReactJs</span>
         </ListItem>
       </List>
+
+      <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
+        Description
+      </Heading>
+      <P>
+        I have solid experience working with the following technology stack,
+        particularly in developing solutions for industrial customers: ReactJS:
+        Developed interactive and high-performance web applications using
+        React’s component-driven architecture. Spring Boot: Created robust and
+        scalable backend services, leveraging Spring Boot for streamlined
+        development and efficient deployment. TDD with JUnit: Applied
+        Test-Driven Development practices using JUnit to ensure high code
+        quality and maintainability, focusing on delivering reliable software
+        solutions. Shopfloor Systems: Delivered tailored shopfloor systems for
+        industrial customers, enhancing operational efficiency and supporting
+        real-time data management on the production floor.
+      </P>
+
+      <br />
 
       <WorkImage src="/images/logo-institute-creathus.png" alt="creathus" />
     </Container>
