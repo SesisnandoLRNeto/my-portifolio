@@ -97,8 +97,8 @@ const Page = () => {
           </BioSection>
 
           <BioSection>
-            <BioYear>2020</BioYear>
-            I was part of innovative solutions at ApoemaFabSoft.
+            <BioYear>2020</BioYear>I was part of innovative solutions at
+            ApoemaFabSoft.
           </BioSection>
 
           <BioSection>
@@ -118,7 +118,8 @@ const Page = () => {
 
           <BioSection>
             <BioYear>2022</BioYear>
-            Started a Professional Master's degree in Software Engineering at Cesar School.
+            Started a Professional Master&apos;s degree in Software Engineering
+            at Cesar School.
           </BioSection>
 
           <BioSection>
@@ -128,14 +129,15 @@ const Page = () => {
 
           <BioSection>
             <BioYear>2024</BioYear>
-            Built impactful tech solutions at Eldorado Institute, with Motorola as its main client
+            Built impactful tech solutions at Eldorado Institute, with Motorola
+            as its main client
           </BioSection>
 
           <BioSection>
             <BioYear>2024 to Present</BioYear>
-            Developing a robust system at Novatics for Protexxa, a Canadian company.
+            Developing a robust system at Novatics for Protexxa, a Canadian
+            company.
           </BioSection>
-
         </Section>
 
         <Section delay={0.3}>

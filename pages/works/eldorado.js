@@ -63,7 +63,7 @@ const Work = () => (
         Description
       </Heading>
       <P>
-        I've worked with Angular and Node.js frameworks, leveraging a
+        I&apos;ve worked with Angular and Node.js frameworks, leveraging a
         comprehensive set of methodologies and tools to deliver high-quality
         software solutions. My current focus is on developing an Enterprise
         Mobility Management (EMM) system, encompassing various critical aspects
@@ -103,9 +103,9 @@ const Work = () => (
         <br />
         <strong>AWS: </strong>
         <br />
-        Some services those I've worked on: SES, S3 Bucket, Cloudfront, Kinesis,
-        Glue Jobs and Crawlers, API Gateway, Lambda functions, SQS, SNS, EC2,
-        ECS and ECR
+        Some services those I&apos;ve worked on: SES, S3 Bucket, Cloudfront,
+        Kinesis, Glue Jobs and Crawlers, API Gateway, Lambda functions, SQS,
+        SNS, EC2, ECS and ECR
         <br />
       </P>
 
