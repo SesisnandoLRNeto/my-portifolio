@@ -91,19 +91,24 @@ const Page = () => {
           </BioSection>
 
           <BioSection>
-            <BioYear>2019</BioYear>
+            <BioYear>2020</BioYear>
             Developed information systems at the Department of Education
             (GESIN/SEDUC-AM).
           </BioSection>
 
           <BioSection>
             <BioYear>2020</BioYear>
-            Innovated solutions at ApoemaFabSoft.
+            I was part of innovative solutions at ApoemaFabSoft.
           </BioSection>
 
           <BioSection>
             <BioYear>2021</BioYear>
-            Contributed to various projects at Creathus Institute.
+            Contributed to several projects at Creathus Institute.
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2021</BioYear>
+            Started at Eldorado Institute.
           </BioSection>
 
           <BioSection>
@@ -112,14 +117,25 @@ const Page = () => {
           </BioSection>
 
           <BioSection>
-            <BioYear>2021 to Present</BioYear>
-            Building impactful tech solutions at Eldorado Institute.
+            <BioYear>2022</BioYear>
+            Started a Professional Master's degree in Software Engineering at Cesar School.
           </BioSection>
 
           <BioSection>
             <BioYear>2024</BioYear>
-            Building software solution at Ingresse Company from Latin America.
+            Built software solution at Ingresse Company from Latin America.
           </BioSection>
+
+          <BioSection>
+            <BioYear>2024</BioYear>
+            Built impactful tech solutions at Eldorado Institute, with Motorola as its main client
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2024 to Present</BioYear>
+            Developing a robust system at Novatics for Protexxa, a Canadian company.
+          </BioSection>
+
         </Section>
 
         <Section delay={0.3}>
