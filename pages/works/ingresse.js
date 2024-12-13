@@ -15,7 +15,7 @@ const Work = () => (
   <Layout title="Ingresse">
     <Container>
       <Title>
-        Ingresse <Badge>2024-</Badge>
+        Ingresse <Badge>2024</Badge>
       </Title>
       <P>
         Ingresse is the leading company in technology and solutions for events
@@ -36,7 +36,7 @@ const Work = () => (
         <ListItem>
           <Meta>Website</Meta>
           <Link href="https://www.ingresse.com/">
-            https://www.ingresse.com// <ExternalLinkIcon mx="2px" />
+            https://www.ingresse.com/{""} <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -57,20 +57,42 @@ const Work = () => (
         Description
       </Heading>
       <P>
-        I have hands-on experience working with a diverse range of technologies,
-        specifically in developing systems for selling tickets for events:
-        AngularJS: Developed and maintained dynamic, single-page applications
-        for event ticketing systems, with a strong focus on user experience and
-        performance to ensure a seamless purchasing process. ReactJS: Built
-        modular and responsive web applications for ticketing platforms,
+        I&apos;ve had hands-on experience working with a diverse range of
+        technologies, specifically in developing systems for selling tickets for
+        events: AngularJS: Developed and maintained dynamic, single-page
+        applications for event ticketing systems, with a strong focus on user
+        experience and performance to ensure a seamless purchasing process.
+        <br />
+        <br />
+        <strong>ReactJS: </strong>
+        <br />
+        Built modular and responsive web applications for ticketing platforms,
         leveraging React&apos;s component-based architecture to support high
-        traffic and scalability during peak sales periods. AWS: Utilized Amazon
-        Web Services to deploy, manage, and scale event ticketing systems,
-        ensuring reliability, security, and efficiency in handling large volumes
-        of transactions.
+        traffic and scalability during peak sales periods.
+        <br />
+        <br /> <strong>AWS:</strong>
+        <br />
+        Utilized Amazon Web Services to deploy, manage, and scale event
+        ticketing systems, ensuring reliability, security, and efficiency in
+        handling large volumes of transactions. Some services I&apos;ve worked
+        on: Cloudfront, S3 Bucket and Route 53
+      </P>
+      <br />
+
+      <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
+        Archievements
+      </Heading>
+      <P>
+        <li>
+          Focused on improving user experience and system scalability, I was
+          able to participated in the design and implementation of the Cruzeiro
+          soccer club module and it was delivered on time
+        </li>
       </P>
 
       <br />
+
+      <WorkImage src="/images/logo-taking.png" alt="talking" />
 
       <WorkImage src="/images/logo-ingresse.png" alt="ingresse" />
     </Container>

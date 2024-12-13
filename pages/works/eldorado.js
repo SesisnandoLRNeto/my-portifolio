@@ -15,7 +15,7 @@ const Work = () => (
   <Layout title="Eldorado">
     <Container>
       <Title>
-        Eldorado <Badge>2021-</Badge>
+        Eldorado <Badge>2021-2024</Badge>
       </Title>
       <P>
         We operate in the areas of software, hardware, microelectronics, tests
@@ -55,7 +55,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, Angular, AWS and Electron</span>
+          <span>NodeJS, Angular and AWS</span>
         </ListItem>
       </List>
 
@@ -63,31 +63,76 @@ const Work = () => (
         Description
       </Heading>
       <P>
-        I am currently working with Angular and Node.js frameworks, leveraging a
+        I've worked with Angular and Node.js frameworks, leveraging a
         comprehensive set of methodologies and tools to deliver high-quality
         software solutions. My current focus is on developing an Enterprise
         Mobility Management (EMM) system, encompassing various critical aspects
         such as CI/CD, code practices, and leadership roles like Chapter Leads.
-        My approach includes: Agile Methodologies: Expert in both
-        Behavior-Driven Development (BDD) and Test-Driven Development (TDD) to
-        ensure continuous delivery and iterative progress. Domain-Driven Design
-        (DDD): Applying DDD principles to create robust and scalable
-        architectures that align closely with business needs, particularly
-        within the EMM domain. Unit Testing: Utilizing Jasmine and Karma to
-        build and maintain a solid suite of unit tests, ensuring code
-        reliability and performance within the EMM system. Automation Testing:
+        My approach includes:
+        <br />
+        <br />
+        <strong>Agile Methodologies: </strong> <br />
+        Expert in both Behavior-Driven Development (BDD) and Test-Driven
+        Development (TDD) to ensure continuous delivery and iterative progress.
+        <br />
+        <br />
+        <strong>Domain-Driven Design (DDD): </strong> <br />
+        Applying DDD principles to create robust and scalable architectures that
+        align closely with business needs, particularly within the EMM domain.
+        <br />
+        <br />
+        <strong> Unit Testing: </strong> <br />
+        Utilizing Jasmine and Karma to build and maintain a solid suite of unit
+        tests, ensuring code reliability and performance within the EMM system.
+        <br />
+        <br />
+        <strong>Automation Testing: </strong> <br />
         Proficient with Protractor and Selenium to automate end-to-end testing,
         enhancing the efficiency and accuracy of the testing process, crucial
-        for maintaining the integrity of the EMM platform. CI/CD & Code
-        Practices: Actively involved in implementing CI/CD pipelines and best
-        coding practices to streamline development and deployment processes,
-        ensuring consistent and high-quality software delivery. Chapter Leads:
+        for maintaining the integrity of the EMM platform.
+        <br />
+        <br /> <strong>CI/CD & Code Practices: </strong> <br />
+        Actively involved in implementing CI/CD pipelines and best coding
+        practices to streamline development and deployment processes, ensuring
+        consistent and high-quality software delivery. <br />
+        <br />
+        <strong>Chapter Leads: </strong> <br />
         Leading and mentoring teams in best practices, fostering collaboration
         and continuous improvement across the development lifecycle.
+        <br />
+        <br />
+        <strong>AWS: </strong>
+        <br />
+        Some services those I've worked on: SES, S3 Bucket, Cloudfront, Kinesis,
+        Glue Jobs and Crawlers, API Gateway, Lambda functions, SQS, SNS, EC2,
+        ECS and ECR
+        <br />
       </P>
 
       <br />
 
+      <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
+        Archievements
+      </Heading>
+      <P>
+        <li>
+          Successfully awarded a prize for excellence by the institute in 2022.
+        </li>
+        <li>
+          Optimized cloud costs and performance for important features using
+          planning and Proof of Concepts.
+        </li>
+        <li>
+          Participated in the entire microfrontend architectural migration
+        </li>
+        <li>
+          Trained and tested a LLM to learn patterns and convert them from
+          natural language into SQL queries into database. The goal was to help
+          users with Advanced filters
+        </li>
+      </P>
+
+      <br />
       <WorkImage src="/images/logo-institute-eldorado.png" alt="eldorado" />
     </Container>
   </Layout>

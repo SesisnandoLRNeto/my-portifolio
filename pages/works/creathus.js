@@ -15,7 +15,7 @@ const Work = () => (
   <Layout title="Creathus">
     <Container>
       <Title>
-        Creathus <Badge>2020-</Badge>
+        Creathus <Badge>2020-2021</Badge>
       </Title>
       <P>
         Founded in January 2019 and Accredited in CAPDA (Commission for Research
@@ -53,16 +53,35 @@ const Work = () => (
       </Heading>
       <P>
         I have solid experience working with the following technology stack,
-        particularly in developing solutions for industrial customers: ReactJS:
+        particularly in developing solutions for industrial customers:
+        <br />
+        <br />
+        <strong> ReactJS:</strong>
+        <br />
         Developed interactive and high-performance web applications using
-        React’s component-driven architecture. Spring Boot: Created robust and
-        scalable backend services, leveraging Spring Boot for streamlined
-        development and efficient deployment. TDD with JUnit: Applied
-        Test-Driven Development practices using JUnit to ensure high code
-        quality and maintainability, focusing on delivering reliable software
-        solutions. Shopfloor Systems: Delivered tailored shopfloor systems for
-        industrial customers, enhancing operational efficiency and supporting
-        real-time data management on the production floor.
+        React’s component-driven architecture.
+        <br />
+        <br />
+        <strong> Spring Boot: </strong>
+        <br />
+        Created robust and scalable backend services, leveraging Spring Boot for
+        streamlined development and efficient deployment.
+        <br />
+        <br />
+        <strong>TDD with JUnit:</strong>
+        <br />
+        Applied Test-Driven Development practices using JUnit to ensure high
+        code quality and maintainability, focusing on delivering reliable
+        software solutions.
+        <br />
+        <br />
+        <strong> Shopfloor Systems:</strong>
+        <br />
+        Delivered tailored shopfloor systems for industrial customers, enhancing
+        operational efficiency and supporting real-time data management on the
+        production floor.
+        <br />
+        <br />
       </P>
 
       <br />
