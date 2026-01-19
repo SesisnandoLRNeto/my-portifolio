@@ -8,6 +8,7 @@ import IngresseLogo from "../public/images/logo-ingresse.png"
 import ProtexxaLogo from "../public/images/logo-protexxa.png"
 import GenericLogo from "../public/images/generic-enterprise.png"
 import SeducLogo from "../public/images/logo-seduc-am.png"
+import TJAM from "../public/images/logo-tjam.png"
 
 const Works = () => {
   return (
@@ -18,6 +19,13 @@ const Works = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <Section delay={0.3}>
+            <WorkGridItem id="tjam" title="TJAM" thumbnail={TJAM}>
+              The PROJUDI system, which is one of the main applications for
+              legal proceedings in Amazonas.{" "}
+            </WorkGridItem>
+          </Section>
+
           <Section delay={0.3}>
             <WorkGridItem
               id="protexxa"
