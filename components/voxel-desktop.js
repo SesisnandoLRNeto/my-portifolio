@@ -138,6 +138,7 @@ const VoxelDesktop = () => {
 
       return () => {
         cancelAnimationFrame(req)
+        renderer.domElement.remove()
         renderer.dispose()
       }
     }

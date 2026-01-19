@@ -21,15 +21,15 @@ const LinkItem = ({ href, path, children }) => {
   const active = path === href
   const inactiveColor = useColorModeValue("gray.200", "whiteAlpha.900")
   return (
-    <NextLink href={href} passHref>
-      <Link
-        p={2}
-        bg={active ? "glassTeal" : undefined}
-        color={active ? "#202023" : inactiveColor}
-      >
-        {children}
-      </Link>
-    </NextLink>
+    <Link
+      as={NextLink}
+      href={href}
+      p={2}
+      bg={active ? "glassTeal" : undefined}
+      color={active ? "#202023" : inactiveColor}
+    >
+      {children}
+    </Link>
   )
 }
 
@@ -87,15 +87,9 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
+                <MenuItem as={NextLink} href="/">About</MenuItem>
+                <MenuItem as={NextLink} href="/works">Works</MenuItem>
+                <MenuItem as={NextLink} href="/posts">Posts</MenuItem>
                 <MenuItem as={Link} href="https://github.com/SesisnandoLRNeto">
                   Github
                 </MenuItem>

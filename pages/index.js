@@ -71,11 +71,14 @@ const Page = () => {
             find him playing games or spending quality time with friends.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works" passHref>
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                My portifolio
-              </Button>
-            </NextLink>
+            <Button
+              as={NextLink}
+              href="/works"
+              rightIcon={<ChevronRightIcon />}
+              colorScheme="teal"
+            >
+              My portifolio
+            </Button>
           </Box>
         </Section>
 
