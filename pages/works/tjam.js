@@ -60,7 +60,7 @@ const Work = () => (
         figures in the judiciary and their demands for the functioning of the
         system. Projudi is very simple and secure to use. Lawyers and citizens
         who wish to file a complaint with the Special Courts can use the
-        Internet or go to the courts' service desk. These requests will be
+        Internet or go to the courts&apos; service desk. These requests will be
         recorded electronically, with automatic distribution and registration of
         the case. From then on, all acts will be performed using the computer,
         eliminating the use of paper.
