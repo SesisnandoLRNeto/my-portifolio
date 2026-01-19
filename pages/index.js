@@ -124,7 +124,8 @@ const Page = () => {
 
           <BioSection>
             <BioYear>2024</BioYear>
-            Built software solution at Ingresse Company from Latin America.
+            Built a ticket sales solution at Ingresse Company from Latin
+            America.
           </BioSection>
 
           <BioSection>
@@ -136,7 +137,12 @@ const Page = () => {
           <BioSection>
             <BioYear>2024 to Present</BioYear>
             Developing a robust system at Novatics for Protexxa, a Canadian
-            company.
+            company as Senior Software Engineer
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2025</BioYear>
+            Started at TJAM as contribuitor developer
           </BioSection>
         </Section>
 
