@@ -13,7 +13,7 @@ const VoxelDesktop = () => {
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(0.5, 1.2, 0))
+  const [target] = useState(new THREE.Vector3(0, 0, 0))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
       20 * Math.sin(0.2 * Math.PI),
@@ -55,7 +55,7 @@ const VoxelDesktop = () => {
 
       setRenderer(renderer)
 
-      const scale = scH * 0.005 + 4.8
+      const scale = scH * 0.0005 + 4.8
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -69,11 +69,11 @@ const VoxelDesktop = () => {
       setCamera(camera)
 
       // Bright ambient light
-      const ambientLight = new THREE.AmbientLight(0xffffff, 6)
+      const ambientLight = new THREE.AmbientLight(0xffffff, 1)
       scene.add(ambientLight)
 
       // Brighter directional light
-      const directionalLight = new THREE.DirectionalLight(0xffffff, 7)
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
       directionalLight.position.set(5, 10, 5)
       directionalLight.castShadow = true
       scene.add(directionalLight)
@@ -95,7 +95,7 @@ const VoxelDesktop = () => {
       const extraDirectionalLight = new THREE.DirectionalLight(0xffffff, 7)
       extraDirectionalLight.position.set(-5, 5, -5)
       scene.add(extraDirectionalLight)
-''
+      ;("")
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
       controls.target = target
@@ -103,8 +103,8 @@ const VoxelDesktop = () => {
 
       // Load the GLTF model
       loadGLTFModel(scene, "/desktop.glb", {
-        receiveShadow: true,
-        castShadow: true
+        receiveShadow: false,
+        castShadow: false
       }).then(model => {
         model.scale.set(4.2, 4.2, 4.2)
         animate()
