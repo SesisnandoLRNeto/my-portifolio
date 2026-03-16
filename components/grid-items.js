@@ -22,15 +22,15 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 )
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" align="center">
+  <Box w="100%" h="100%" align="center" style={{ alignContent: "center" }}>
     <LinkBox as={NextLink} href={`/works/${id}`} cursor="pointer">
       <Image
         src={thumbnail}
         alt={title}
         className="grid-item-thumbnail"
         placeholder="blur"
-        width={250}
-        height={220}
+        width={200}
+        height={200}
       />
       <LinkOverlay as="span">
         <Text mt={2} fontSize={20}>

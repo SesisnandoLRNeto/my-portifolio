@@ -15,7 +15,7 @@ const Work = () => (
   <Layout title="Protexxa">
     <Container>
       <Title>
-        Protexxa <Badge>2024-Present</Badge>
+        Protexxa <Badge>2024-2026</Badge>
       </Title>
       <P>
         Protexxa is a B2B SaaS cybersecurity platform that leverages Artificial
@@ -47,9 +47,9 @@ const Work = () => (
         Description
       </Heading>
       <P>
-        I am currently working with Node.js, Express, and React (TypeScript)
-        frameworks, leveraging a comprehensive set of AWS services and modern
-        development practices to deliver high-quality web security applications.
+        I was working with Node.js, Express, and React (TypeScript) frameworks,
+        leveraging a comprehensive set of AWS services and modern development
+        practices to deliver high-quality web security applications.
         Specifically, I am developing robust systems for Protexxa, a Canadian
         contractor, that integrate seamlessly with cloud services and emphasize
         security, scalability, and performance.

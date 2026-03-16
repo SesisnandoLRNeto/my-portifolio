@@ -6,6 +6,7 @@ import EldoradoLogo from "../public/images/logo-institute-eldorado.png"
 import CreathusLogo from "../public/images/logo-institute-creathus.png"
 import IngresseLogo from "../public/images/logo-ingresse.png"
 import ProtexxaLogo from "../public/images/logo-protexxa.png"
+import AppenLogo from "../public/images/logo-appen.png"
 import GenericLogo from "../public/images/generic-enterprise.png"
 import SeducLogo from "../public/images/logo-seduc-am.png"
 import TJAM from "../public/images/logo-tjam.png"
@@ -18,11 +19,17 @@ const Works = () => {
           Works
         </Heading>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <SimpleGrid columns={[2, 2, 2]} gap={6}>
+          <Section delay={0.3}>
+            <WorkGridItem id="appen" title="Appen" thumbnail={AppenLogo}>
+              A High-Quality data for frontier AI{" "}
+            </WorkGridItem>
+          </Section>
+
           <Section delay={0.3}>
             <WorkGridItem id="tjam" title="TJAM" thumbnail={TJAM}>
               The PROJUDI system, which is one of the main applications for
-              legal proceedings in Amazonas.{" "}
+              legal Aproceedings in Amazonas.{" "}
             </WorkGridItem>
           </Section>
 

@@ -1,22 +1,213 @@
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import {
+  Badge,
   Box,
   Button,
+  Circle,
   Container,
+  Flex,
   Heading,
   Icon,
   Image,
   Link,
   List,
   ListItem,
+  Text,
   useColorModeValue
 } from "@chakra-ui/react"
-import Layout from "../components/layouts/article"
+import { motion } from "framer-motion"
 import NextLink from "next/link"
-import { BioSection, BioYear } from "../components/bio"
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io"
+import Layout from "../components/layouts/article"
 import Paragraph from "../components/paragraph"
 import Section from "../components/section"
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io"
+
+const MotionBox = motion(Box)
+
+const entries = [
+  {
+    year: "2017",
+    type: "work",
+    role: "Student Intranet Creator",
+    org: "Lab Environment Project"
+  },
+  {
+    year: "2018",
+    type: "edu",
+    role: "B.Sc. in Software Engineering",
+    org: "Federal University of Amazonas (UFAM)"
+  },
+  {
+    year: "2019–2020",
+    type: "work",
+    role: "Information Systems Developer",
+    org: "GESIN / SEDUC-AM"
+  },
+  {
+    year: "2020",
+    type: "work",
+    role: "Fullstack Developer",
+    org: "ApoemaFabSoft"
+  },
+  {
+    year: "2020–2021",
+    type: "work",
+    role: "Fullstack Developer",
+    org: "Creathus Institute"
+  },
+  {
+    year: "2021–2022",
+    type: "edu",
+    role: "MBA in Full-Stack Web Development",
+    org: "IGTI"
+  },
+  {
+    year: "2021–2023",
+    type: "work",
+    role: "Mid-level Fullstack Developer",
+    org: "Eldorado Institute"
+  },
+  {
+    year: "2022–2026",
+    type: "edu",
+    role: "M.Sc. in Software Engineering",
+    org: "Cesar School"
+  },
+  {
+    year: "2023–2025",
+    type: "work",
+    role: "Senior Fullstack Developer — Motorola",
+    org: "Eldorado Institute"
+  },
+  {
+    year: "2024",
+    type: "work",
+    role: "Software Engineer — Ticket Sales",
+    org: "Ingresse"
+  },
+  {
+    year: "2024–2026",
+    type: "work",
+    role: "Senior Software Engineer — Protexxa",
+    org: "Novatics"
+  },
+  {
+    year: "2025–Present",
+    type: "work",
+    role: "Contributor Developer",
+    org: "TJAM",
+    current: true
+  },
+  {
+    year: "2026–Present",
+    type: "work",
+    role: "Senior Software Engineer — Appen",
+    org: "Novatics",
+    current: true
+  }
+]
+
+const typeConfig = {
+  work: { badge: "blue", label: "Work", color: "blue.400" },
+  edu: { badge: "teal", label: "Education", color: "teal.400" }
+}
+
+const TimelineItem = ({ entry, index }) => {
+  const spineBg = useColorModeValue("gray.200", "whiteAlpha.200")
+  const yearColor = useColorModeValue("gray.400", "gray.500")
+  const roleColor = useColorModeValue("gray.800", "whiteAlpha.900")
+  const orgColor = useColorModeValue("gray.500", "gray.400")
+
+  const { year, type, role, org, current } = entry
+  const { badge, label, color } = typeConfig[type]
+
+  return (
+    <MotionBox
+      initial={{ opacity: 0, x: -12 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.3, delay: index * 0.05 }}
+    >
+      <Flex align="flex-start">
+        <Box w="95px" flexShrink={0} pt="3px" pr={3} textAlign="right">
+          <Text
+            fontSize="10px"
+            fontWeight="500"
+            color={yearColor}
+            whiteSpace="nowrap"
+            letterSpacing="0.03em"
+          >
+            {year}
+          </Text>
+        </Box>
+
+        <Flex direction="column" align="center" flexShrink={0} w="14px">
+          <Circle
+            size={current ? "11px" : "9px"}
+            bg={current ? color : "transparent"}
+            borderWidth="1.5px"
+            borderColor={color}
+            mt="3px"
+          />
+          <Box flex={1} w="1px" bg={spineBg} minH="24px" />
+        </Flex>
+
+        <Box flex={1} pl={3} pb={4}>
+          <Badge
+            colorScheme={badge}
+            fontSize="9px"
+            mb={1}
+            borderRadius="full"
+            px={2}
+          >
+            {label}
+          </Badge>
+          <Text
+            fontSize="sm"
+            fontWeight="500"
+            color={roleColor}
+            lineHeight="1.4"
+          >
+            {role}
+          </Text>
+          <Text fontSize="xs" color={orgColor} mt="1px">
+            {org}
+          </Text>
+        </Box>
+      </Flex>
+    </MotionBox>
+  )
+}
+
+const BioTimeline = () => {
+  const borderColor = useColorModeValue("gray.200", "whiteAlpha.200")
+  const labelColor = useColorModeValue("gray.400", "gray.500")
+
+  return (
+    <Box>
+      <Flex
+        gap={4}
+        mb={5}
+        pb={3}
+        borderBottom="0.5px solid"
+        borderColor={borderColor}
+      >
+        {Object.entries(typeConfig).map(([key, cfg]) => (
+          <Flex key={key} align="center" gap={1.5}>
+            <Circle size="8px" bg={cfg.color} />
+            <Text fontSize="11px" color={labelColor}>
+              {cfg.label}
+            </Text>
+          </Flex>
+        ))}
+      </Flex>
+      <Box>
+        {entries.map((entry, i) => (
+          <TimelineItem key={i} entry={entry} index={i} />
+        ))}
+      </Box>
+    </Box>
+  )
+}
 
 const Page = () => {
   return (
@@ -86,67 +277,7 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Bio
           </Heading>
-
-          <BioSection>
-            <BioYear>2019</BioYear>
-            Graduated with a degree in Software Engineering from the Federal
-            University of Amazonas (UFAM).
-          </BioSection>
-
-          <BioSection>
-            <BioYear>2020</BioYear>
-            Developed information systems at the Department of Education
-            (GESIN/SEDUC-AM).
-          </BioSection>
-
-          <BioSection>
-            <BioYear>2020</BioYear>I was part of innovative solutions at
-            ApoemaFabSoft.
-          </BioSection>
-
-          <BioSection>
-            <BioYear>2021</BioYear>
-            Contributed to several projects at Creathus Institute.
-          </BioSection>
-
-          <BioSection>
-            <BioYear>2021</BioYear>
-            Started at Eldorado Institute.
-          </BioSection>
-
-          <BioSection>
-            <BioYear>2021</BioYear>
-            Earned an MBA in Full-Stack Web Development from IGTI.
-          </BioSection>
-
-          <BioSection>
-            <BioYear>2022</BioYear>
-            Started a Professional Master&apos;s degree in Software Engineering
-            at Cesar School.
-          </BioSection>
-
-          <BioSection>
-            <BioYear>2024</BioYear>
-            Built a ticket sales solution at Ingresse Company from Latin
-            America.
-          </BioSection>
-
-          <BioSection>
-            <BioYear>2024</BioYear>
-            Built impactful tech solutions at Eldorado Institute, with Motorola
-            as its main client
-          </BioSection>
-
-          <BioSection>
-            <BioYear>2024 to Present</BioYear>
-            Developing a robust system at Novatics for Protexxa, a Canadian
-            company as Senior Software Engineer
-          </BioSection>
-
-          <BioSection>
-            <BioYear>2025</BioYear>
-            Started at TJAM as contribuitor developer
-          </BioSection>
+          <BioTimeline />
         </Section>
 
         <Section delay={0.3}>
@@ -176,7 +307,6 @@ const Page = () => {
                 </Button>
               </Link>
             </ListItem>
-
             <ListItem>
               <Link
                 href="https://www.linkedin.com/in/sesisnando-rodrigues/"
