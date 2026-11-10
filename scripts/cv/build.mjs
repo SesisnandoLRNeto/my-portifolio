@@ -1,6 +1,7 @@
 // Builds the CV PDFs (one per language) from the same data the site uses:
 // locales/*.json (profile, jobs.<id>.cv, cv.*), data/works.json (dates) and data/cv.json (contact).
-// Runs before every `next build` (npm "prebuild"), so a site update ships a new CV.
+// Runs as part of `npm run build` (before `next build`), so a site update ships a new CV.
+// cvStart overrides start when the CV role began later than the job page period.
 // Output: public/cv/sesisnando-cv-<locale>.pdf
 import fs from "node:fs"
 import path from "node:path"
@@ -279,7 +280,7 @@ const Right = ({ dict }) => {
         key: work.id,
         title: job.role,
         org: job.org,
-        period: `${formatDate(work.start, dict)} - ${formatDate(work.end, dict)}`,
+        period: `${formatDate(work.cvStart || work.start, dict)} - ${formatDate(work.end, dict)}`,
         lines: job.summary,
         technologies: job.technologies,
         dict

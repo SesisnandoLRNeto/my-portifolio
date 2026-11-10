@@ -1,7 +1,6 @@
 {
   "meta": {
-    "siteTitle": "Sesisnando Homepage",
-    "titleSuffix": "Sesisnando Neto"
+    "siteTitle": "Sesisnando Homepage"
   },
   "nav": {
     "about": "About",
@@ -381,8 +380,7 @@
       "motivation": "Why I built it",
       "goals": "Goals",
       "stack": "Stack",
-      "screenshots": "Screenshots",
-      "github": "Source code on GitHub"
+      "screenshots": "Screenshots"
     },
     "items": {
       "guild": {

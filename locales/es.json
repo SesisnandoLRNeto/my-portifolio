@@ -1,7 +1,6 @@
 {
   "meta": {
-    "siteTitle": "Sesisnando | Portafolio",
-    "titleSuffix": "Sesisnando Neto"
+    "siteTitle": "Sesisnando | Portafolio"
   },
   "nav": {
     "about": "Acerca de mí",
@@ -381,8 +380,7 @@
       "motivation": "Por qué lo creé",
       "goals": "Objetivos",
       "stack": "Tecnologías",
-      "screenshots": "Capturas de pantalla",
-      "github": "Código en GitHub"
+      "screenshots": "Capturas de pantalla"
     },
     "items": {
       "guild": {

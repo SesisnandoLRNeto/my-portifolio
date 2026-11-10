@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
-    "prebuild": "node scripts/cv/build.mjs",
-    "build": "next build",
+    "build": "node scripts/cv/build.mjs && next build",
     "cv": "node scripts/cv/build.mjs",
     "prettier": "prettier -write .",
     "lint": "next lint"

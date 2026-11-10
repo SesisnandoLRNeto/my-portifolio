@@ -2,7 +2,6 @@
   {
     "id": "appen",
     "name": "Appen",
-    "company": "Novatics",
     "start": "2026",
     "end": null,
     "website": "https://appen.com/",
@@ -33,7 +32,6 @@
   {
     "id": "protexxa",
     "name": "Protexxa",
-    "company": "Novatics",
     "start": "2024-11",
     "end": "2026",
     "website": "https://protexxa.com/",
@@ -68,7 +66,6 @@
   {
     "id": "eldorado",
     "name": "Eldorado",
-    "company": "Eldorado R&D Institute",
     "start": "2021",
     "end": "2025-03",
     "website": "https://www.eldorado.org.br/o-eldorado/",
@@ -77,12 +74,12 @@
         "src": "/images/logo-institute-eldorado.png",
         "alt": "Eldorado"
       }
-    ]
+    ],
+    "cvStart": "2023-04"
   },
   {
     "id": "creathus",
     "name": "Creathus",
-    "company": "Creathus Institute",
     "start": "2020-10",
     "end": "2021-04",
     "website": "https://creathus.org.br/",

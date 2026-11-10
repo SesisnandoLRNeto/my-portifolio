@@ -153,13 +153,19 @@ const VoxelDesktop = () => {
       loadGLTFModel(scene, "/desktop.glb", {
         receiveShadow: false,
         castShadow: false
-      }).then(model => {
-        model.scale.set(4.2, 4.2, 4.2)
-        model.add(createKeyboard())
-        frameModel(camera, model, initialCameraPosition)
-        animate()
-        setLoading(false)
       })
+        .then(model => {
+          model.scale.set(4.2, 4.2, 4.2)
+          model.add(createKeyboard())
+          frameModel(camera, model, initialCameraPosition)
+          animate()
+          setLoading(false)
+        })
+        .catch(() => {
+          // e.g. WebAssembly off: the meshopt decoder cannot run. Hide the figure.
+          setFailed(true)
+          setLoading(false)
+        })
 
       let req = null
       let frame = 0
