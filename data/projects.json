@@ -1,1 +1,91 @@
-[]
+[
+  {
+    "id": "guild",
+    "name": "Guild",
+    "github": "https://github.com/SesisnandoLRNeto/guild",
+    "stack": [
+      "Bash",
+      "Python (standard library)",
+      "HTML/CSS/JS",
+      "tmux",
+      "Claude Code"
+    ],
+    "images": [
+      {
+        "src": "/images/projects/guild/plan.webp"
+      },
+      {
+        "src": "/images/projects/guild/campaign.webp"
+      },
+      {
+        "src": "/images/projects/guild/wrapup.webp"
+      }
+    ]
+  },
+  {
+    "id": "claude-deck",
+    "name": "claude-deck",
+    "github": "https://github.com/SesisnandoLRNeto/claude-deck",
+    "stack": [
+      "Python",
+      "Textual (TUI)",
+      "tmux",
+      "iTerm2"
+    ],
+    "images": [
+      {
+        "src": "/images/projects/claude-deck/dashboard.webp"
+      },
+      {
+        "src": "/images/projects/claude-deck/pinned.webp"
+      },
+      {
+        "src": "/images/projects/claude-deck/chat.webp"
+      }
+    ]
+  },
+  {
+    "id": "sr-automation",
+    "name": "sr-automation",
+    "github": "https://github.com/SesisnandoLRNeto/sr-automation",
+    "stack": [
+      "Python",
+      "Llama 3.3 70B (Groq)",
+      "ChromaDB",
+      "FastAPI",
+      "scikit-learn"
+    ],
+    "images": [
+      {
+        "src": "/images/projects/sr-automation/pipeline-diagram.webp"
+      },
+      {
+        "src": "/images/projects/sr-automation/pipeline-ui.webp"
+      }
+    ]
+  },
+  {
+    "id": "search-engine-c",
+    "name": "Search-Engine-in-C",
+    "github": "https://github.com/SesisnandoLRNeto/Search-Engine-in-C",
+    "stack": [
+      "C"
+    ],
+    "images": [
+      {
+        "src": "/images/projects/search-engine-c/search.webp"
+      }
+    ]
+  },
+  {
+    "id": "my-neovim",
+    "name": "my-neovim",
+    "github": "https://github.com/SesisnandoLRNeto/my-neovim",
+    "stack": [
+      "Lua",
+      "Neovim",
+      "LazyVim"
+    ],
+    "images": []
+  }
+]

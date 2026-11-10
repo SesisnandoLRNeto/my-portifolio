@@ -384,7 +384,82 @@
       "screenshots": "Screenshots",
       "github": "Source code on GitHub"
     },
-    "items": {}
+    "items": {
+      "guild": {
+        "goal": "Run several coding agents at once while keeping every decision and every merge.",
+        "motivation": "One agent is easy to follow. Several agents at the same time are not: you lose track of what each one does and what it decided for you. Guild gives each agent its own worktree and tab, and puts every real choice on a local page so I decide, not the agent. All state stays in plain files on my machine.",
+        "goals": [
+          "Plans approved before any code is written",
+          "Acceptance checks written first and sealed",
+          "An independent review before every pull request",
+          "Decisions on a local page instead of in chat",
+          "All state in plain files on your own machine"
+        ],
+        "images": [
+          "Guild war table: a plan page with steps and acceptance checks (demo data)",
+          "Guild campaign board: quests moving from to-do to done (demo data)",
+          "Guild wrap-up page with trial evidence and numbers (demo data)"
+        ],
+        "note": "The code is public on GitHub but has no license yet: it is a personal tool, not an open source product."
+      },
+      "claude-deck": {
+        "goal": "One terminal screen to watch every Claude Code session across all your accounts.",
+        "motivation": "When several Claude Code sessions run in different terminal tabs and accounts, it is hard to know which one is working, which one is waiting, and what each one costs. claude-deck reads Claude Code's own local files, so it needs no API key and sends nothing over the network.",
+        "goals": [
+          "See live and recent sessions from all accounts in one list",
+          "Show each session's agent tree, tasks and cost",
+          "Read a colored transcript and send a message to a live session",
+          "Jump to the right terminal tab, or mirror its screen",
+          "Pin the conversations you care about and resume past ones"
+        ],
+        "images": [
+          "claude-deck dashboard with conversations, agent tree, tasks and stats (mock data)",
+          "claude-deck with pinned conversations at the top (mock data)",
+          "claude-deck colored transcript with a message box (mock data)"
+        ]
+      },
+      "sr-automation": {
+        "goal": "An LLM pipeline that screens, extracts and summarizes papers for systematic reviews.",
+        "motivation": "This is the code of my master's dissertation in software engineering. A systematic review means reading hundreds of papers by hand. The project tests how far an LLM can do the first steps, and how to check its answers against a human gold standard.",
+        "goals": [
+          "Collect papers for a query and a range of years",
+          "Screen each paper with a YES or NO answer",
+          "Extract structured data from the papers kept",
+          "Write a three-sentence summary for each paper",
+          "Measure recall, precision, F1 and Cohen's Kappa against a human review"
+        ],
+        "images": [
+          "Pipeline diagram: corpus, screening, extraction, summary",
+          "SR-Automation web page with the ten pipeline steps"
+        ]
+      },
+      "search-engine-c": {
+        "goal": "A search engine written in C for historical documents of the Amazon region, stored locally.",
+        "motivation": "This was an information retrieval course project. It builds the parts of a search engine by hand: a vocabulary with a hash table, an inverted list, and a ranking of documents by how similar they are to the query.",
+        "goals": [
+          "Build a vocabulary of all terms in the documents",
+          "Build an inverted list that maps each term to its documents",
+          "Weight terms with TF and IDF",
+          "Rank documents by similarity to the query",
+          "Run on a local collection of 35 historical texts"
+        ],
+        "images": [
+          "Terminal output of a real search over historical documents of the Amazon region"
+        ]
+      },
+      "my-neovim": {
+        "goal": "My Neovim setup for web development, built on LazyVim.",
+        "motivation": "I wanted an editor that lives in the terminal and that I can keep in a repo. It started from the LazyVim starter template, then I added the tools for web work and, later, Java debugging and Git conflict handling.",
+        "goals": [
+          "Keep the whole editor setup in one repo",
+          "Set up the tools for web development",
+          "Add Java debugging (DAP)",
+          "Handle Git conflicts inside the editor",
+          "Work fully from the terminal"
+        ],
+        "images": []
+      }
+    }
   },
   "notFound": {
     "title": "Not Found",

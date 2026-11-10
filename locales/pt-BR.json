@@ -384,7 +384,82 @@
       "screenshots": "Telas",
       "github": "Código no GitHub"
     },
-    "items": {}
+    "items": {
+      "guild": {
+        "goal": "Rodar vários agentes de código ao mesmo tempo, mantendo cada decisão e cada merge nas suas mãos.",
+        "motivation": "Acompanhar um agente é fácil. Vários ao mesmo tempo, não: você perde o controle do que cada um faz e do que decidiu por você. O Guild dá a cada agente seu próprio worktree e sua própria aba, e coloca toda escolha importante numa página local, para eu decidir, não o agente. Todo o estado fica em arquivos simples na minha máquina.",
+        "goals": [
+          "Planos aprovados antes de qualquer código",
+          "Verificações de aceite escritas antes e seladas",
+          "Revisão independente antes de cada pull request",
+          "Decisões numa página local, em vez de no chat",
+          "Todo o estado em arquivos simples na sua própria máquina"
+        ],
+        "images": [
+          "Mesa de guerra do Guild: página de plano com passos e verificações de aceite (dados de demonstração)",
+          "Quadro de campanha do Guild: missões indo de a fazer até concluídas (dados de demonstração)",
+          "Página de encerramento do Guild com evidências do teste e números (dados de demonstração)"
+        ],
+        "note": "O código é público no GitHub, mas ainda não tem licença: é uma ferramenta pessoal, não um produto open source."
+      },
+      "claude-deck": {
+        "goal": "Uma tela de terminal para acompanhar todas as sessões do Claude Code, de todas as suas contas.",
+        "motivation": "Quando várias sessões do Claude Code rodam em abas e contas diferentes, fica difícil saber qual está trabalhando, qual está esperando e quanto cada uma custa. O claude-deck lê os arquivos locais do próprio Claude Code, então não precisa de chave de API e não envia nada pela rede.",
+        "goals": [
+          "Ver sessões ativas e recentes de todas as contas numa só lista",
+          "Mostrar a árvore de agentes, as tarefas e o custo de cada sessão",
+          "Ler uma transcrição colorida e enviar mensagem para uma sessão ativa",
+          "Pular para a aba certa do terminal ou espelhar a tela dela",
+          "Fixar as conversas importantes e retomar as antigas"
+        ],
+        "images": [
+          "Painel do claude-deck com conversas, árvore de agentes, tarefas e estatísticas (dados fictícios)",
+          "claude-deck com conversas fixadas no topo (dados fictícios)",
+          "Transcrição colorida do claude-deck com caixa de mensagem (dados fictícios)"
+        ]
+      },
+      "sr-automation": {
+        "goal": "Um pipeline com LLM que faz a triagem, extrai dados e resume artigos para revisões sistemáticas.",
+        "motivation": "Este é o código da minha dissertação de mestrado em engenharia de software. Uma revisão sistemática exige ler centenas de artigos à mão. O projeto testa até onde um LLM consegue fazer as primeiras etapas e como conferir as respostas dele com um padrão-ouro feito por humanos.",
+        "goals": [
+          "Coletar artigos para uma busca e um intervalo de anos",
+          "Triar cada artigo com resposta SIM ou NÃO",
+          "Extrair dados estruturados dos artigos mantidos",
+          "Escrever um resumo de três frases para cada artigo",
+          "Medir recall, precisão, F1 e Kappa de Cohen contra uma revisão humana"
+        ],
+        "images": [
+          "Diagrama do pipeline: corpus, triagem, extração e resumo",
+          "Página web do SR-Automation com as dez etapas do pipeline"
+        ]
+      },
+      "search-engine-c": {
+        "goal": "Uma máquina de busca em C para documentos históricos da região amazônica, guardados localmente.",
+        "motivation": "Foi um projeto de uma disciplina de recuperação de informação. Ele constrói à mão as partes de uma máquina de busca: um vocabulário com tabela hash, uma lista invertida e um ranking dos documentos pela semelhança com a consulta.",
+        "goals": [
+          "Montar um vocabulário com todos os termos dos documentos",
+          "Montar uma lista invertida que liga cada termo aos seus documentos",
+          "Dar peso aos termos com TF e IDF",
+          "Ordenar os documentos pela semelhança com a consulta",
+          "Rodar numa coleção local de 35 textos históricos"
+        ],
+        "images": [
+          "Saída de terminal de uma busca real em documentos históricos da região amazônica"
+        ]
+      },
+      "my-neovim": {
+        "goal": "Minha configuração do Neovim para desenvolvimento web, baseada no LazyVim.",
+        "motivation": "Eu queria um editor que viva no terminal e que eu possa guardar num repositório. Ele começou do template inicial do LazyVim, depois adicionei as ferramentas para trabalho web e, mais tarde, depuração de Java e tratamento de conflitos do Git.",
+        "goals": [
+          "Manter toda a configuração do editor em um repositório",
+          "Configurar as ferramentas para desenvolvimento web",
+          "Adicionar depuração de Java (DAP)",
+          "Resolver conflitos do Git dentro do editor",
+          "Trabalhar totalmente pelo terminal"
+        ],
+        "images": []
+      }
+    }
   },
   "notFound": {
     "title": "Página não encontrada",

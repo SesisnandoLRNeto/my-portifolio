@@ -2,6 +2,7 @@ import NextLink from "next/link"
 import {
   Box,
   Container,
+  Flex,
   Heading,
   Image,
   LinkBox,
@@ -30,7 +31,7 @@ const Projects = () => {
           {projects.map(project => (
             <Section key={project.id} delay={0.2}>
               <LinkBox as="article" textAlign="center">
-                {project.images[0] && (
+                {project.images[0] ? (
                   <Image
                     src={project.images[0].src}
                     alt={t(`projects.items.${project.id}.images.0`)}
@@ -41,6 +42,19 @@ const Projects = () => {
                     objectPosition="top"
                     loading="lazy"
                   />
+                ) : (
+                  <Flex
+                    borderRadius="12px"
+                    w="full"
+                    aspectRatio={16 / 10}
+                    align="center"
+                    justify="center"
+                    bg="blackAlpha.200"
+                    fontFamily="mono"
+                    fontSize="lg"
+                  >
+                    {project.name}
+                  </Flex>
                 )}
                 <LinkOverlay as={NextLink} href={`/projects/${project.id}`}>
                   <Text mt={2} fontSize={20}>

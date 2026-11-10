@@ -384,7 +384,82 @@
       "screenshots": "Capturas de pantalla",
       "github": "Código en GitHub"
     },
-    "items": {}
+    "items": {
+      "guild": {
+        "goal": "Ejecutar varios agentes de código a la vez, manteniendo cada decisión y cada merge en tus manos.",
+        "motivation": "Seguir a un agente es fácil. Seguir a varios al mismo tiempo no lo es: pierdes de vista qué hace cada uno y qué decidió por ti. Guild le da a cada agente su propio worktree y su propia pestaña, y pone cada elección importante en una página local, para que decida yo y no el agente. Todo el estado queda en archivos simples en mi máquina.",
+        "goals": [
+          "Planes aprobados antes de escribir código",
+          "Verificaciones de aceptación escritas primero y selladas",
+          "Una revisión independiente antes de cada pull request",
+          "Decisiones en una página local en lugar del chat",
+          "Todo el estado en archivos simples en tu propia máquina"
+        ],
+        "images": [
+          "Mesa de guerra de Guild: página de plan con pasos y verificaciones de aceptación (datos de demostración)",
+          "Tablero de campaña de Guild: misiones que pasan de pendientes a terminadas (datos de demostración)",
+          "Página de cierre de Guild con evidencias de la prueba y números (datos de demostración)"
+        ],
+        "note": "El código es público en GitHub, pero todavía no tiene licencia: es una herramienta personal, no un producto de código abierto."
+      },
+      "claude-deck": {
+        "goal": "Una pantalla de terminal para seguir todas las sesiones de Claude Code de todas tus cuentas.",
+        "motivation": "Cuando varias sesiones de Claude Code corren en pestañas y cuentas distintas, es difícil saber cuál está trabajando, cuál está esperando y cuánto cuesta cada una. claude-deck lee los archivos locales del propio Claude Code, así que no necesita clave de API y no envía nada por la red.",
+        "goals": [
+          "Ver sesiones activas y recientes de todas las cuentas en una sola lista",
+          "Mostrar el árbol de agentes, las tareas y el costo de cada sesión",
+          "Leer una transcripción a color y enviar un mensaje a una sesión activa",
+          "Saltar a la pestaña correcta del terminal o reflejar su pantalla",
+          "Fijar las conversaciones importantes y retomar las anteriores"
+        ],
+        "images": [
+          "Panel de claude-deck con conversaciones, árbol de agentes, tareas y estadísticas (datos ficticios)",
+          "claude-deck con conversaciones fijadas arriba (datos ficticios)",
+          "Transcripción a color de claude-deck con caja de mensaje (datos ficticios)"
+        ]
+      },
+      "sr-automation": {
+        "goal": "Un pipeline con LLM que filtra, extrae datos y resume artículos para revisiones sistemáticas.",
+        "motivation": "Este es el código de mi tesis de maestría en ingeniería de software. Una revisión sistemática exige leer cientos de artículos a mano. El proyecto prueba hasta dónde puede un LLM hacer los primeros pasos y cómo comparar sus respuestas con un estándar de oro hecho por personas.",
+        "goals": [
+          "Recolectar artículos para una consulta y un rango de años",
+          "Filtrar cada artículo con una respuesta SÍ o NO",
+          "Extraer datos estructurados de los artículos que se mantienen",
+          "Escribir un resumen de tres frases para cada artículo",
+          "Medir recall, precisión, F1 y Kappa de Cohen contra una revisión humana"
+        ],
+        "images": [
+          "Diagrama del pipeline: corpus, filtrado, extracción y resumen",
+          "Página web de SR-Automation con los diez pasos del pipeline"
+        ]
+      },
+      "search-engine-c": {
+        "goal": "Un motor de búsqueda en C para documentos históricos de la región amazónica, guardados localmente.",
+        "motivation": "Fue un proyecto de un curso de recuperación de información. Construye a mano las partes de un motor de búsqueda: un vocabulario con tabla hash, una lista invertida y un ranking de documentos según su parecido con la consulta.",
+        "goals": [
+          "Armar un vocabulario con todos los términos de los documentos",
+          "Armar una lista invertida que une cada término con sus documentos",
+          "Dar peso a los términos con TF e IDF",
+          "Ordenar los documentos por su parecido con la consulta",
+          "Funcionar con una colección local de 35 textos históricos"
+        ],
+        "images": [
+          "Salida de terminal de una búsqueda real en documentos históricos de la región amazónica"
+        ]
+      },
+      "my-neovim": {
+        "goal": "Mi configuración de Neovim para desarrollo web, basada en LazyVim.",
+        "motivation": "Quería un editor que viva en la terminal y que pueda guardar en un repositorio. Empezó desde la plantilla inicial de LazyVim; después agregué las herramientas para trabajo web y, más tarde, depuración de Java y manejo de conflictos de Git.",
+        "goals": [
+          "Mantener toda la configuración del editor en un repositorio",
+          "Configurar las herramientas para desarrollo web",
+          "Agregar depuración de Java (DAP)",
+          "Resolver conflictos de Git dentro del editor",
+          "Trabajar por completo desde la terminal"
+        ],
+        "images": []
+      }
+    }
   },
   "notFound": {
     "title": "Página no encontrada",
@@ -408,7 +483,20 @@
     },
     "keyTechnologies": "Tecnologías principales",
     "present": "Actual",
-    "months": ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"],
+    "months": [
+      "ene",
+      "feb",
+      "mar",
+      "abr",
+      "may",
+      "jun",
+      "jul",
+      "ago",
+      "sep",
+      "oct",
+      "nov",
+      "dic"
+    ],
     "profile": "Desarrollador Full Stack Senior con más de 7 años de experiencia en desarrollo de software y bases de datos. Reconocido por su profesionalismo ético, su trabajo en equipo y sus excelentes relaciones interpersonales. Resuelvo problemas con una mirada dinámica y tengo un compromiso con el aprendizaje continuo y la mentoría de otros profesionales. Domino frameworks de front-end como Angular y React, y tecnologías de back-end como Node.js y Spring Boot. Tengo buen manejo de patrones de diseño, metodologías ágiles, pruebas unitarias y automatizadas, control de versiones y gestión de bases de datos.",
     "skills": [
       "Aprendo rápido",
@@ -425,23 +513,65 @@
       "Gestión de proyectos"
     ],
     "languages": [
-      { "name": "Portugués", "level": "Nativo" },
-      { "name": "Inglés", "level": "Fluido" },
-      { "name": "Español", "level": "Básico" }
+      {
+        "name": "Portugués",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglés",
+        "level": "Fluido"
+      },
+      {
+        "name": "Español",
+        "level": "Básico"
+      }
     ],
     "education": [
-      { "course": "Ingeniería de Software", "school": "Universidad Federal de Amazonas (UFAM)", "date": "Julio de 2019" },
-      { "course": "MBA en Desarrollo Web Full Stack", "school": "Instituto de Gestión en Tecnologías de la Información (IGTI)", "date": "Julio de 2021" },
-      { "course": "Maestría Profesional en Ingeniería de Software", "school": "CESAR School", "date": "En curso" }
+      {
+        "course": "Ingeniería de Software",
+        "school": "Universidad Federal de Amazonas (UFAM)",
+        "date": "Julio de 2019"
+      },
+      {
+        "course": "MBA en Desarrollo Web Full Stack",
+        "school": "Instituto de Gestión en Tecnologías de la Información (IGTI)",
+        "date": "Julio de 2021"
+      },
+      {
+        "course": "Maestría Profesional en Ingeniería de Software",
+        "school": "CESAR School",
+        "date": "En curso"
+      }
     ],
     "certifications": [
-      { "name": "Oracle Database SQL Certified Expert - 1z0-047", "issuer": "Oracle" },
-      { "name": "AWS Certified Developer - Associate®", "issuer": "Amazon" },
-      { "name": "Certified Scrum Developer® (CSD®)", "issuer": "Scrum Alliance" },
-      { "name": "Android Enterprise Professional", "issuer": "Google" },
-      { "name": "Curso de Scrum Master", "issuer": "RHF Talentos MDC SP" },
-      { "name": "Curso Completo de Web Moderna con JavaScript", "issuer": "Udemy" },
-      { "name": "Fundamentos de Seguridad Web", "issuer": "DevAcademy" }
+      {
+        "name": "Oracle Database SQL Certified Expert - 1z0-047",
+        "issuer": "Oracle"
+      },
+      {
+        "name": "AWS Certified Developer - Associate®",
+        "issuer": "Amazon"
+      },
+      {
+        "name": "Certified Scrum Developer® (CSD®)",
+        "issuer": "Scrum Alliance"
+      },
+      {
+        "name": "Android Enterprise Professional",
+        "issuer": "Google"
+      },
+      {
+        "name": "Curso de Scrum Master",
+        "issuer": "RHF Talentos MDC SP"
+      },
+      {
+        "name": "Curso Completo de Web Moderna con JavaScript",
+        "issuer": "Udemy"
+      },
+      {
+        "name": "Fundamentos de Seguridad Web",
+        "issuer": "DevAcademy"
+      }
     ],
     "internship": {
       "role": "Pasante de Ingeniería de Software",
