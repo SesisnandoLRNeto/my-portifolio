@@ -23,6 +23,25 @@ const components = {
       }
     }
   },
+  // Light theme only: teal button text that passes WCAG AA on the beige body.
+  // Solid teal.500 with gray.900 text is 4.8:1 (white was 3.51:1);
+  // outline/ghost text teal.700 is 5.99:1 (teal.600 was 4.11:1).
+  Button: {
+    variants: {
+      solid: props =>
+        props.colorScheme === "teal"
+          ? { color: mode("gray.900", undefined)(props) }
+          : {},
+      outline: props =>
+        props.colorScheme === "teal"
+          ? { color: mode("teal.700", undefined)(props) }
+          : {},
+      ghost: props =>
+        props.colorScheme === "teal"
+          ? { color: mode("teal.700", undefined)(props) }
+          : {}
+    }
+  },
   Link: {
     baseStyle: props => ({
       color: mode("#3d4aed", "#ff63c3")(props),
