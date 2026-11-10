@@ -28,8 +28,14 @@ const LanguageSwitch = () => {
         as={Button}
         variant="ghost"
         size="md"
-        px={2}
+        px={{ base: 1, md: 2 }}
         leftIcon={<IoGlobeOutline />}
+        iconSpacing={{ base: 0, md: 2 }}
+        sx={{
+          "& .chakra-button__icon": {
+            display: { base: "none", sm: "inline-flex" }
+          }
+        }}
         aria-label={t("nav.language")}
       >
         {short[locale]}

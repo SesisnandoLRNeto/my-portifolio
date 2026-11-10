@@ -33,6 +33,7 @@ const Logo = () => {
         <Text
           color={useColorModeValue("gray.800", "whiteAlpha.900")}
           fontFamily="M PLUS Rounded 1c"
+          whiteSpace="nowrap"
           fontWeight="bold"
           ml={3}
         >
