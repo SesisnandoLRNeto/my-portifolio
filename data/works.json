@@ -1,0 +1,123 @@
+[
+  {
+    "id": "appen",
+    "name": "Appen",
+    "company": "Novatics",
+    "start": "2026",
+    "end": null,
+    "website": "https://appen.com/",
+    "images": [
+      {
+        "src": "/images/logo-novatics.png",
+        "alt": "Novatics"
+      },
+      {
+        "src": "/images/logo-appen.png",
+        "alt": "Appen"
+      }
+    ]
+  },
+  {
+    "id": "tjam",
+    "name": "TJAM",
+    "start": "2025",
+    "end": null,
+    "website": "https://www.tjam.jus.br/",
+    "images": [
+      {
+        "src": "/images/logo-tjam.png",
+        "alt": "TJAM"
+      }
+    ]
+  },
+  {
+    "id": "protexxa",
+    "name": "Protexxa",
+    "company": "Novatics",
+    "start": "2024-11",
+    "end": "2026",
+    "website": "https://protexxa.com/",
+    "images": [
+      {
+        "src": "/images/logo-novatics.png",
+        "alt": "Novatics"
+      },
+      {
+        "src": "/images/logo-protexxa.png",
+        "alt": "Protexxa"
+      }
+    ]
+  },
+  {
+    "id": "ingresse",
+    "name": "Ingresse",
+    "start": "2024-01",
+    "end": "2024-05",
+    "website": "https://www.ingresse.com/",
+    "images": [
+      {
+        "src": "/images/logo-taking.png",
+        "alt": "Taking"
+      },
+      {
+        "src": "/images/logo-ingresse.png",
+        "alt": "Ingresse"
+      }
+    ]
+  },
+  {
+    "id": "eldorado",
+    "name": "Eldorado",
+    "company": "Eldorado R&D Institute",
+    "start": "2021",
+    "end": "2025-03",
+    "website": "https://www.eldorado.org.br/o-eldorado/",
+    "images": [
+      {
+        "src": "/images/logo-institute-eldorado.png",
+        "alt": "Eldorado"
+      }
+    ]
+  },
+  {
+    "id": "creathus",
+    "name": "Creathus",
+    "company": "Creathus Institute",
+    "start": "2020-10",
+    "end": "2021-04",
+    "website": "https://creathus.org.br/",
+    "images": [
+      {
+        "src": "/images/logo-institute-creathus.png",
+        "alt": "Creathus"
+      }
+    ]
+  },
+  {
+    "id": "apoema",
+    "name": "ApoemaFabSoft",
+    "start": "2020-01",
+    "end": "2020-10",
+    "website": "https://apoemafabsoft.com.br/",
+    "websiteOffline": true,
+    "images": [
+      {
+        "src": "/images/generic-enterprise.png",
+        "alt": "ApoemaFabSoft"
+      }
+    ]
+  },
+  {
+    "id": "gesin",
+    "name": "GESIN / SEDUC-AM",
+    "start": "2019-09",
+    "end": "2020-01",
+    "website": "https://www.seduc.am.gov.br/",
+    "images": [
+      {
+        "src": "/images/logo-seduc-am.png",
+        "alt": "SEDUC-AM"
+      }
+    ]
+  }
+]

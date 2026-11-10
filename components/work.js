@@ -1,23 +1,27 @@
 import NextLink from "next/link"
 import { Heading, Box, Image, Link, Badge } from "@chakra-ui/react"
 import { ChevronRightIcon } from "@chakra-ui/icons"
+import { useT } from "../libs/i18n"
 
-export const Title = ({ children }) => (
-  <Box>
-    <Link as={NextLink} href="/works">
-      Works
-    </Link>
+export const Title = ({ children, parent = "works" }) => {
+  const { t } = useT()
+  return (
+    <Box>
+      <Link as={NextLink} href={`/${parent}`}>
+        {t(`nav.${parent}`)}
+      </Link>
 
-    <span>
-      &nbsp;
-      <ChevronRightIcon />
-      &nbsp;
-    </span>
-    <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
-      {children}
-    </Heading>
-  </Box>
-)
+      <span>
+        &nbsp;
+        <ChevronRightIcon />
+        &nbsp;
+      </span>
+      <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
+        {children}
+      </Heading>
+    </Box>
+  )
+}
 
 export const WorkImage = ({ src, alt }) => (
   <Image src={src} alt={alt} mb={4} borderRadius="lg" w="full" />

@@ -14,12 +14,16 @@ import {
   IconButton,
   useColorModeValue
 } from "@chakra-ui/react"
-import { HamburgerIcon } from "@chakra-ui/icons"
+import { DownloadIcon, HamburgerIcon } from "@chakra-ui/icons"
 import ThemeToggleButton from "./theme-toggle-button"
+import LanguageSwitch from "./language-switch"
+import { cvHref, useT } from "../libs/i18n"
+
+const useInactiveColor = () => useColorModeValue("gray.800", "whiteAlpha.900")
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue("gray.200", "whiteAlpha.900")
+  const inactiveColor = useInactiveColor()
   return (
     <Link
       as={NextLink}
@@ -35,6 +39,8 @@ const LinkItem = ({ href, path, children }) => {
 
 const Navbar = props => {
   const { path } = props
+  const { t, locale } = useT()
+  const inactiveColor = useInactiveColor()
 
   return (
     <Box
@@ -66,32 +72,67 @@ const Navbar = props => {
           width={{ base: "full", md: "auto" }}
           alignItems="center"
           flexGrow={1}
-          mt={{ base: 4, nmd: 0 }}
+          mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            {t("nav.works")}
+          </LinkItem>
+          <LinkItem href="/projects" path={path}>
+            {t("nav.projects")}
           </LinkItem>
           <LinkItem href="/posts" path={path}>
-            Posts
+            {t("nav.posts")}
           </LinkItem>
+          <Link
+            href={cvHref(locale)}
+            download
+            p={2}
+            color={inactiveColor}
+            display="inline-flex"
+            alignItems="center"
+            gap={1}
+          >
+            <DownloadIcon boxSize={3} />
+            {t("nav.cv")}
+          </Link>
         </Stack>
 
-        <Box flex={1} align="right">
-          <ThemeToggleButton />
+        <Box flex={1} align="right" whiteSpace="nowrap">
+          <LanguageSwitch />
+          <Box ml={1} display="inline-block">
+            <ThemeToggleButton />
+          </Box>
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
-            <Menu>
+            <Menu isLazy>
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
-                aria-label="Options"
+                aria-label={t("nav.menu")}
               />
               <MenuList>
-                <MenuItem as={NextLink} href="/">About</MenuItem>
-                <MenuItem as={NextLink} href="/works">Works</MenuItem>
-                <MenuItem as={NextLink} href="/posts">Posts</MenuItem>
+                <MenuItem as={NextLink} href="/">
+                  {t("nav.about")}
+                </MenuItem>
+                <MenuItem as={NextLink} href="/works">
+                  {t("nav.works")}
+                </MenuItem>
+                <MenuItem as={NextLink} href="/projects">
+                  {t("nav.projects")}
+                </MenuItem>
+                <MenuItem as={NextLink} href="/posts">
+                  {t("nav.posts")}
+                </MenuItem>
+                <MenuItem
+                  as="a"
+                  href={cvHref(locale)}
+                  download
+                  icon={<DownloadIcon />}
+                >
+                  {t("nav.downloadCv")}
+                </MenuItem>
                 <MenuItem as={Link} href="https://github.com/SesisnandoLRNeto">
-                  Github
+                  {t("nav.github")}
                 </MenuItem>
               </MenuList>
             </Menu>

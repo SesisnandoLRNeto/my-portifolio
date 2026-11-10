@@ -39,6 +39,15 @@ const colors = {
   glassTeal: "#88ccca"
 }
 
+// Text colors only. Light values are checked against the beige body #f0e7db
+// for WCAG AA (4.5:1): gray.600 is 6.15:1. Dark values against #202023.
+const semanticTokens = {
+  colors: {
+    "text-muted": { default: "gray.600", _dark: "gray.400" },
+    "text-strong": { default: "gray.800", _dark: "whiteAlpha.900" }
+  }
+}
+
 const config = {
   initialColorMode: "dark",
   useSystemColorMode: true
@@ -47,6 +56,7 @@ const config = {
 const theme = extendTheme({
   config,
   styles,
+  semanticTokens,
   components,
   colors,
   fonts
