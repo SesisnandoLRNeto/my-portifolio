@@ -8,9 +8,77 @@ function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
 
+// Clean keyboard drawn above the melted one baked into the model.
+// Coordinates are in model space (the model is about 1 unit tall).
+function createKeyboard() {
+  const kb = new THREE.Group()
+  const plateMat = new THREE.MeshStandardMaterial({
+    color: 0x23262b,
+    roughness: 0.6
+  })
+  const keyMat = new THREE.MeshStandardMaterial({
+    color: 0x3a3e45,
+    roughness: 0.55
+  })
+  kb.add(new THREE.Mesh(new THREE.BoxGeometry(0.25, 0.008, 0.32), plateMat))
+
+  const rows = 5
+  const cols = 12
+  const size = 0.0165
+  const gap = 0.0045
+  const step = size + gap
+  const keyGeo = new THREE.BoxGeometry(size, 0.006, size)
+  for (let r = 0; r < rows; r++) {
+    for (let c = 0; c < cols; c++) {
+      const key = new THREE.Mesh(keyGeo, keyMat)
+      key.position.set(-0.1 + r * step, 0.007, (c - (cols - 1) / 2) * step)
+      kb.add(key)
+    }
+  }
+  kb.position.set(0.155, -0.183, 0.1)
+  return kb
+}
+
+// Fit the orthographic frustum to the model for every auto-rotate angle,
+// so the figure fills the canvas without being cut.
+function frameModel(camera, model, cameraPosition) {
+  const box = new THREE.Box3().setFromObject(model)
+  const center = box.getCenter(new THREE.Vector3())
+  const dir = cameraPosition.clone().normalize()
+  const up = new THREE.Vector3(0, 1, 0)
+  let half = 0
+  const corner = new THREE.Vector3()
+  for (let a = 0; a < Math.PI * 2; a += Math.PI / 36) {
+    const d = dir.clone().applyAxisAngle(up, a)
+    const right = new THREE.Vector3().crossVectors(up, d).normalize()
+    const camUp = new THREE.Vector3().crossVectors(d, right).normalize()
+    for (let i = 0; i < 8; i++) {
+      corner
+        .set(
+          i & 1 ? box.max.x : box.min.x,
+          i & 2 ? box.max.y : box.min.y,
+          i & 4 ? box.max.z : box.min.z
+        )
+        .sub(center)
+      half = Math.max(
+        half,
+        Math.abs(corner.dot(right)),
+        Math.abs(corner.dot(camUp))
+      )
+    }
+  }
+  half *= 1.04
+  camera.left = -half
+  camera.right = half
+  camera.top = half
+  camera.bottom = -half
+  camera.updateProjectionMatrix()
+}
+
 const VoxelDesktop = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
+  const [failed, setFailed] = useState(false)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
   const [target] = useState(new THREE.Vector3(0, 0, 0))
@@ -42,60 +110,40 @@ const VoxelDesktop = () => {
       const scW = container.clientWidth
       const scH = container.clientHeight
 
-      const renderer = new THREE.WebGL1Renderer({
-        antialias: true,
-        alpha: true
-      })
+      let renderer
+      try {
+        renderer = new THREE.WebGLRenderer({
+          antialias: true,
+          alpha: true
+        })
+      } catch (error) {
+        // No WebGL: hide the model instead of crashing the page
+        setFailed(true)
+        setLoading(false)
+        return
+      }
 
       renderer.setPixelRatio(window.devicePixelRatio)
       renderer.setSize(scW, scH)
-      renderer.outputEncoding = THREE.sRGBEncoding
-      renderer.physicallyCorrectLights = true
+      renderer.outputColorSpace = THREE.SRGBColorSpace
       container.appendChild(renderer.domElement)
 
       setRenderer(renderer)
 
-      const scale = scH * 0.0005 + 4.8
-      const camera = new THREE.OrthographicCamera(
-        -scale,
-        scale,
-        scale,
-        -scale,
-        0.01,
-        50000
-      )
+      const camera = new THREE.OrthographicCamera(-5, 5, 5, -5, 0.01, 50000)
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
       setCamera(camera)
 
-      // Bright ambient light
-      const ambientLight = new THREE.AmbientLight(0xffffff, 1)
-      scene.add(ambientLight)
+      // Soft sky light, one key light and one fill light
+      scene.add(new THREE.HemisphereLight(0xffffff, 0x9a8f85, 2))
+      const keyLight = new THREE.DirectionalLight(0xfff6ec, 1.8)
+      keyLight.position.set(5, 8, 6)
+      scene.add(keyLight)
+      const fillLight = new THREE.DirectionalLight(0xdfe9ff, 0.6)
+      fillLight.position.set(-6, 3, -2)
+      scene.add(fillLight)
 
-      // Brighter directional light
-      const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
-      directionalLight.position.set(5, 10, 5)
-      directionalLight.castShadow = true
-      scene.add(directionalLight)
-
-      // Extra point light for additional brightness
-      const pointLight1 = new THREE.PointLight(0xffffff, 7)
-      pointLight1.position.set(-5, 10, 5)
-      scene.add(pointLight1)
-
-      // Another point light for balanced lighting
-      const pointLight2 = new THREE.PointLight(0xffffff, 6)
-      pointLight2.position.set(5, -10, -5)
-      scene.add(pointLight2)
-
-      const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 6)
-      hemiLight.position.set(0, 20, 0)
-      scene.add(hemiLight)
-
-      const extraDirectionalLight = new THREE.DirectionalLight(0xffffff, 7)
-      extraDirectionalLight.position.set(-5, 5, -5)
-      scene.add(extraDirectionalLight)
-      ;("")
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
       controls.target = target
@@ -107,6 +155,8 @@ const VoxelDesktop = () => {
         castShadow: false
       }).then(model => {
         model.scale.set(4.2, 4.2, 4.2)
+        model.add(createKeyboard())
+        frameModel(camera, model, initialCameraPosition)
         animate()
         setLoading(false)
       })
@@ -151,13 +201,13 @@ const VoxelDesktop = () => {
     }
   }, [renderer, handleWindowResize])
 
+  if (failed) return null
+
   return (
     <Box
       ref={refContainer}
       className="voxel-desktop"
       m="auto"
-      at={["-20px", "-60px", "-120px"]}
-      mb={["-40px", "-140px", "-200px"]}
       w={[280, 480, 640]}
       h={[280, 480, 640]}
       position="relative"
