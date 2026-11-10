@@ -136,11 +136,11 @@ const VoxelDesktop = () => {
       setCamera(camera)
 
       // Soft sky light, one key light and one fill light
-      scene.add(new THREE.HemisphereLight(0xffffff, 0x9a8f85, 2))
-      const keyLight = new THREE.DirectionalLight(0xfff6ec, 1.8)
+      scene.add(new THREE.HemisphereLight(0xffffff, 0xc9beb3, 2.8))
+      const keyLight = new THREE.DirectionalLight(0xfff6ec, 2.4)
       keyLight.position.set(5, 8, 6)
       scene.add(keyLight)
-      const fillLight = new THREE.DirectionalLight(0xdfe9ff, 0.6)
+      const fillLight = new THREE.DirectionalLight(0xdfe9ff, 0.9)
       fillLight.position.set(-6, 3, -2)
       scene.add(fillLight)
 
