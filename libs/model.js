@@ -1,4 +1,5 @@
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
+import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.js"
 
 export function loadGLTFModel(
   scene,
@@ -8,6 +9,7 @@ export function loadGLTFModel(
   const { receiveShadow, castShadow } = options
   return new Promise((resolve, reject) => {
     const loader = new GLTFLoader()
+    loader.setMeshoptDecoder(MeshoptDecoder)
 
     loader.load(
       glbPath,

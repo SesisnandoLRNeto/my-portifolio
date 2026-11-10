@@ -1,0 +1,581 @@
+{
+  "meta": {
+    "siteTitle": "Sesisnando | Portfólio"
+  },
+  "nav": {
+    "about": "Sobre",
+    "works": "Experiência",
+    "posts": "Artigos",
+    "projects": "Projetos",
+    "github": "GitHub",
+    "cv": "Currículo",
+    "downloadCv": "Baixar currículo",
+    "language": "Idioma",
+    "menu": "Menu",
+    "toggleTheme": "Alternar tema",
+    "logoAlt": "Logo do Sesisnando"
+  },
+  "languages": {
+    "en": "English",
+    "pt-BR": "Português",
+    "es": "Español"
+  },
+  "home": {
+    "greeting": "Olá! Sou um desenvolvedor full stack brasileiro, apaixonado pelo que faço e dedicado a criar software que gera impacto.",
+    "role": "Engenheiro Full Stack",
+    "photoAlt": "Sesisnando",
+    "profileTitle": "Perfil",
+    "profile": "Sesisnando é um Engenheiro de Software e desenvolvedor full stack dedicado, com uma grande paixão por criar soluções digitais que fazem diferença. Ele acredita no poder do código para mudar as coisas e gosta de encarar desafios de frente. Quando não está programando, está jogando ou passando um bom tempo com os amigos.",
+    "portfolioButton": "Meu portfólio",
+    "cvButton": "Baixar meu currículo",
+    "bioTitle": "Trajetória",
+    "loveTitle": "Eu ♥",
+    "love": "Quando não estou programando, adoro mergulhar no heavy metal, tocar guitarra, explorar novas tecnologias com IA e jogar RPG e jogos de tabuleiro com os amigos.",
+    "onTheWebTitle": "Na web",
+    "present": "Atual",
+    "legend": {
+      "work": "Trabalho",
+      "edu": "Formação"
+    },
+    "timeline": {
+      "lab": {
+        "role": "Criador da intranet dos alunos",
+        "org": "Projeto de laboratório"
+      },
+      "ufam": {
+        "role": "Bacharelado em Engenharia de Software",
+        "org": "Universidade Federal do Amazonas (UFAM)"
+      },
+      "gesin": {
+        "role": "Desenvolvedor de Sistemas de Informação",
+        "org": "GESIN / SEDUC-AM"
+      },
+      "apoema": {
+        "role": "Desenvolvedor Full Stack",
+        "org": "ApoemaFabSoft"
+      },
+      "creathus": {
+        "role": "Desenvolvedor Full Stack",
+        "org": "Instituto Creathus"
+      },
+      "igti": {
+        "role": "MBA em Desenvolvimento Web Full Stack",
+        "org": "IGTI"
+      },
+      "eldoradoMid": {
+        "role": "Desenvolvedor Full Stack Pleno",
+        "org": "Instituto Eldorado"
+      },
+      "cesar": {
+        "role": "Mestrado em Engenharia de Software",
+        "org": "CESAR School"
+      },
+      "eldoradoSenior": {
+        "role": "Desenvolvedor Full Stack Sênior — Motorola",
+        "org": "Instituto Eldorado"
+      },
+      "ingresse": {
+        "role": "Engenheiro de Software — Venda de Ingressos",
+        "org": "Ingresse"
+      },
+      "protexxa": {
+        "role": "Engenheiro de Software Sênior — Protexxa",
+        "org": "Novatics"
+      },
+      "tjam": {
+        "role": "Desenvolvedor Colaborador",
+        "org": "TJAM"
+      },
+      "appen": {
+        "role": "Engenheiro de Software Sênior — Appen",
+        "org": "Novatics"
+      }
+    }
+  },
+  "works": {
+    "title": "Experiência",
+    "present": "Atual",
+    "labels": {
+      "website": "Site",
+      "platform": "Plataforma",
+      "role": "Cargo",
+      "stack": "Tecnologias",
+      "description": "Descrição",
+      "achievements": "Conquistas",
+      "offline": "fora do ar"
+    }
+  },
+  "jobs": {
+    "appen": {
+      "summary": "Dados de alta qualidade para IA de ponta",
+      "intro": "A Appen é a principal fornecedora de dados e serviços de alta qualidade para treinar LLMs, com mais de 25 anos de experiência, oferecendo há décadas conjuntos de dados que alimentam os principais modelos de IA do mundo.",
+      "role": "Engenheiro Full Stack Sênior",
+      "stack": "React.js e Spring Boot",
+      "lead": "Atuo como Engenheiro de Desenvolvimento de Software Sênior na Appen, referência global em dados para IA e soluções de machine learning. Nessa função, construo e mantenho sistemas distribuídos escaláveis, seguros e de alto desempenho, com uma arquitetura moderna full stack e de microsserviços. A Appen oferece serviços e ferramentas de dados de nível corporativo que aceleram fluxos avançados de IA e o desenvolvimento de modelos.",
+      "sections": [
+        {
+          "title": "Desenvolvimento full stack",
+          "text": "Projeto e implementação de ponta a ponta com Spring Boot e React, garantindo uma integração fluida entre as APIs do backend e as aplicações do frontend."
+        },
+        {
+          "title": "Serviços de nuvem AWS",
+          "text": "Uso de serviços da AWS como o Elastic Beanstalk para gestão de ambientes, pipelines de deploy escaláveis e observabilidade integrada."
+        },
+        {
+          "title": "Monitoramento de desempenho",
+          "text": "Implementação de observabilidade e acompanhamento de desempenho com Rollbar e New Relic para identificar problemas, otimizar a performance e cumprir melhor os SLAs."
+        },
+        {
+          "title": "Microsserviços e integração",
+          "text": "Arquitetura e desenvolvimento de microsserviços desacoplados, com contratos de API bem definidos e processamento de eventos em tempo real com Apache Kafka."
+        },
+        {
+          "title": "IA no meu dia a dia",
+          "text": "Rodo vários agentes de programação em paralelo, entre eles o Claude Code, por meio de um pequeno orquestrador que eu mesmo construí. Cada tarefa começa com um plano escrito, que eu aprovo antes de qualquer linha de código, e com critérios de aceite definidos antes do trabalho começar. Toda mudança passa por uma etapa de revisão independente antes de abrir o pull request, e eu mesmo reviso e faço o merge de cada pull request."
+        }
+      ],
+      "achievements": [],
+      "cv": {
+        "role": "Engenheiro de Software Sênior",
+        "org": "Novatics / cliente: Appen",
+        "summary": [
+          "Construo e mantenho sistemas distribuídos para uma referência global em dados de treinamento para IA, com Spring Boot, React.js, AWS e Apache Kafka.",
+          "Uso agentes de programação no dia a dia, com planos escritos, critérios de aceite, revisão independente e merge feito por uma pessoa."
+        ],
+        "technologies": "React.js, Spring Boot, AWS, Kafka, Rollbar, New Relic."
+      }
+    },
+    "tjam": {
+      "summary": "PROJUDI, um dos principais sistemas de processo judicial do Amazonas",
+      "intro": "O processo judicial digital, também chamado de processo virtual ou eletrônico, pode ser definido como um sistema que reproduz todo o procedimento judicial em meio eletrônico, substituindo o registro dos atos processuais em papel pelo armazenamento e manipulação dos autos em formato digital.",
+      "role": "Desenvolvedor Staff",
+      "stack": "Java",
+      "lead": "Trabalho com um sistema legado que está passando por uma migração completa de tecnologias para se alinhar às aplicações modernas.",
+      "sections": [
+        {
+          "title": "Java",
+          "text": "Desenvolvi aplicações web modulares e responsivas para o Judiciário com componentes Java, a partir dos requisitos de figuras-chave do tribunal e das suas necessidades para o funcionamento do sistema. O Projudi é simples e seguro de usar. Advogados e cidadãos que desejam entrar com uma ação nos Juizados Especiais podem usar a internet ou ir ao balcão de atendimento do fórum. Esses pedidos são registrados eletronicamente, com distribuição e cadastro automáticos do processo. A partir daí, todos os atos são feitos no computador, sem uso de papel."
+        }
+      ],
+      "achievements": [],
+      "cv": {
+        "role": "Desenvolvedor Colaborador",
+        "org": "Tribunal de Justiça do Amazonas (TJAM)",
+        "summary": [
+          "Contribuo com o PROJUDI, sistema de processo judicial eletrônico do Tribunal de Justiça do Amazonas, durante a migração para tecnologias modernas."
+        ],
+        "technologies": "Java."
+      }
+    },
+    "protexxa": {
+      "summary": "Empresa global de plataforma e serviços de cibersegurança",
+      "intro": "A Protexxa é uma plataforma SaaS B2B de cibersegurança que usa Inteligência Artificial para identificar, avaliar, prever e resolver rapidamente problemas de segurança dos funcionários.",
+      "role": "Engenheiro Full Stack Sênior",
+      "stack": "React e Node.js",
+      "lead": "Trabalhei com Node.js, Express e React (TypeScript), usando um amplo conjunto de serviços da AWS e práticas modernas de desenvolvimento para entregar aplicações de segurança web de alta qualidade. Desenvolvi para a Protexxa, uma empresa canadense, sistemas que se integram aos serviços de nuvem com foco em segurança, escalabilidade e desempenho.",
+      "sections": [
+        {
+          "title": "Desenvolvimento full stack",
+          "text": "Experiência em backend e frontend com Node.js, Express e React, garantindo boa integração e desempenho das aplicações web."
+        },
+        {
+          "title": "Serviços de nuvem AWS",
+          "text": "Uso de serviços da AWS como o Cognito para autenticação, o Elastic Beanstalk para deploy e outras ferramentas da AWS para melhorar escalabilidade, confiabilidade e segurança. Alguns serviços usados: S3, Kafka MSK, SNS, SQS, CloudFront e EC2."
+        },
+        {
+          "title": "Monitoramento de desempenho",
+          "text": "Uso de OpenTelemetry e Rollbar para monitorar e melhorar o desempenho das aplicações."
+        },
+        {
+          "title": "Serviços de machine learning",
+          "text": "Integração do AWS Comprehend e do AWS Personalize para adicionar recursos de machine learning às aplicações."
+        }
+      ],
+      "achievements": [],
+      "cv": {
+        "role": "Engenheiro de Software Sênior",
+        "org": "Novatics / cliente: Protexxa",
+        "summary": [
+          "Atuei com um cliente canadense no desenvolvimento de soluções avançadas de cibersegurança, usadas por empresas de diversos setores."
+        ],
+        "technologies": "React.js, Node.js, testes unitários, práticas de CI/CD, AWS."
+      }
+    },
+    "ingresse": {
+      "summary": "Solução de software para eventos e entretenimento na América Latina",
+      "intro": "A Ingresse é a empresa líder em tecnologia e soluções para eventos e entretenimento na América Latina. Com inovação, segurança digital e um profundo conhecimento do mercado de entretenimento, conectamos nossos clientes ao que realmente importa: pessoas e histórias. Com mais de 10 anos de experiência no mercado brasileiro, construímos um portfólio com grandes nomes do entretenimento no país e vendemos ingressos para os maiores réveillons, Carnaval, festivais, festas de marcas e casas noturnas. Garantimos nosso alto padrão de segurança, atendimento e acesso sem complicação para mais de 5 mil produtores e 5,5 milhões de usuários na América Latina. Queremos levar essa experiência em entretenimento e venda de ingressos para além das nossas fronteiras. A chegada da Ingresse à Espanha e ao Uruguai marca o início da nossa operação mundial.",
+      "role": "Desenvolvedor Front-end Sênior",
+      "stack": "Angular e React",
+      "lead": "Tive experiência prática com várias tecnologias, principalmente no desenvolvimento de sistemas de venda de ingressos para eventos.",
+      "sections": [
+        {
+          "title": "AngularJS",
+          "text": "Desenvolvi e mantive aplicações single-page dinâmicas para sistemas de venda de ingressos, com foco forte em experiência do usuário e desempenho, para garantir uma compra sem atritos."
+        },
+        {
+          "title": "ReactJS",
+          "text": "Construí aplicações web modulares e responsivas para plataformas de ingressos, aproveitando a arquitetura de componentes do React para suportar alto tráfego e escalar nos picos de venda."
+        },
+        {
+          "title": "AWS",
+          "text": "Usei a Amazon Web Services para fazer deploy, gerenciar e escalar sistemas de venda de ingressos, com confiabilidade, segurança e eficiência no processamento de grandes volumes de transações. Alguns serviços usados: CloudFront, S3 e Route 53."
+        }
+      ],
+      "achievements": [
+        "Com foco em melhorar a experiência do usuário e a escalabilidade do sistema, participei da concepção e implementação do módulo do Cruzeiro Esporte Clube, entregue dentro do prazo."
+      ],
+      "cv": {
+        "role": "Desenvolvedor Front-end Sênior",
+        "org": "Ingresse",
+        "summary": [
+          "Mantive e desenvolvi novas funcionalidades para um sistema de compra e venda de ingressos com alto volume de acessos.",
+          "Conquistas: com foco em experiência do usuário e escalabilidade, participei da concepção e implementação do módulo do Cruzeiro Esporte Clube."
+        ],
+        "technologies": "AngularJS, ReactJS, AWS."
+      }
+    },
+    "eldorado": {
+      "summary": "Instituto de Pesquisa e Desenvolvimento",
+      "intro": "Atuamos nas áreas de software, hardware, microeletrônica, testes e ensaios, educação e consultoria, criando e executando projetos e soluções focados em tecnologia e inovação. O primeiro passo foi dado em 1999 e hoje já somos mais de mil colaboradores em quatro unidades pelo Brasil, em Brasília, Campinas, Manaus e Porto Alegre. Além de contribuir para a transformação digital das empresas, nosso propósito é desenvolver o ecossistema tecnológico do país, com foco em projetos de Inovação Aberta. Criamos soluções disruptivas para mercados como TI/Telecom, Energia, Agronegócio, Óleo e Gás, Saúde, Automotivo, entre outros, e temos casos de sucesso em tecnologias emergentes como Inteligência Artificial, Visão Computacional, Computação Gráfica, Realidade Virtual e Aumentada, Assistentes Virtuais e Interface de Voz, Big Data e Analytics, Sistemas Embarcados, IoT e Blockchain. Ao longo desses anos, formamos e fortalecemos uma ampla carteira de clientes, que inclui grandes empresas nacionais e internacionais, além de estarmos sempre presentes nos rankings das melhores empresas para trabalhar no Brasil.",
+      "role": "Desenvolvedor Full Stack Sênior",
+      "stack": "Node.js, Angular e AWS",
+      "lead": "Trabalhei com Angular e Node.js, usando um conjunto amplo de metodologias e ferramentas para entregar software de alta qualidade. Meu foco era o desenvolvimento de um sistema de Gerenciamento de Mobilidade Empresarial (EMM), que envolve CI/CD, boas práticas de código e papéis de liderança como Chapter Lead. Minha abordagem inclui:",
+      "sections": [
+        {
+          "title": "Metodologias ágeis",
+          "text": "Experiência em Behavior-Driven Development (BDD) e Test-Driven Development (TDD) para garantir entrega contínua e progresso iterativo."
+        },
+        {
+          "title": "Domain-Driven Design (DDD)",
+          "text": "Aplicação dos princípios de DDD para criar arquiteturas sólidas e escaláveis, bem alinhadas às necessidades do negócio, principalmente no domínio de EMM."
+        },
+        {
+          "title": "Testes unitários",
+          "text": "Uso de Jasmine e Karma para criar e manter uma boa suíte de testes unitários, garantindo confiabilidade e desempenho do código no sistema de EMM."
+        },
+        {
+          "title": "Testes automatizados",
+          "text": "Domínio de Protractor e Selenium para automatizar testes ponta a ponta, deixando o processo de testes mais eficiente e preciso, o que é essencial para manter a integridade da plataforma de EMM."
+        },
+        {
+          "title": "CI/CD e boas práticas de código",
+          "text": "Participação ativa na implantação de pipelines de CI/CD e de boas práticas de código para simplificar o desenvolvimento e o deploy, garantindo entregas consistentes e de alta qualidade."
+        },
+        {
+          "title": "Chapter Lead",
+          "text": "Liderança e mentoria de times em boas práticas, incentivando a colaboração e a melhoria contínua em todo o ciclo de desenvolvimento."
+        },
+        {
+          "title": "AWS",
+          "text": "Alguns serviços com os quais trabalhei: SES, S3, CloudFront, Kinesis, Glue Jobs e Crawlers, API Gateway, funções Lambda, SQS, SNS, EC2, ECS e ECR."
+        }
+      ],
+      "achievements": [
+        "Recebi o prêmio de excelência do instituto em 2022.",
+        "Otimizei custos de nuvem e o desempenho de funcionalidades importantes com planejamento e provas de conceito.",
+        "Participei de toda a migração da arquitetura para microfrontends.",
+        "Treinei e testei um LLM para aprender padrões e converter linguagem natural em consultas SQL ao banco de dados. O objetivo era ajudar os usuários com filtros avançados."
+      ],
+      "cv": {
+        "role": "Desenvolvedor Full Stack Sênior",
+        "org": "Instituto Eldorado",
+        "summary": [
+          "Liderei o desenvolvimento e a manutenção de uma aplicação web de Gerenciamento de Mobilidade Empresarial, com a Motorola como principal cliente.",
+          "Conquistas: otimizei custos de nuvem e o desempenho de funcionalidades importantes, participei de toda a migração da arquitetura para microfrontends e recebi o prêmio de excelência do instituto em 2022."
+        ],
+        "technologies": "Angular, Node.js, testes com Jasmine, Protractor, práticas de CI/CD, liderança de Chapter."
+      }
+    },
+    "creathus": {
+      "summary": "Instituto de Pesquisa e Desenvolvimento",
+      "intro": "Fundado em janeiro de 2019 e credenciado no CAPDA (Comitê das Atividades de Pesquisa e Desenvolvimento na Amazônia), o Creathus é um Instituto de Tecnologia genuinamente amazônico que promove o desenvolvimento da Região Amazônica e do Brasil por meio de projetos de Pesquisa, Desenvolvimento e Inovação, apoio a empreendimentos e cadeias produtivas e conexão com ecossistemas nacionais e internacionais, estimulando negócios da economia digital, bioeconomia, Indústria 4.0, empreendedorismo inovador e formação de pessoas.",
+      "role": "Desenvolvedor Full Stack",
+      "stack": "Spring Boot, Vue.js e React",
+      "lead": "Tenho experiência sólida com as tecnologias abaixo, principalmente no desenvolvimento de soluções para clientes industriais:",
+      "sections": [
+        {
+          "title": "ReactJS",
+          "text": "Desenvolvi aplicações web interativas e de alto desempenho com a arquitetura de componentes do React."
+        },
+        {
+          "title": "Spring Boot",
+          "text": "Criei serviços de backend sólidos e escaláveis, usando o Spring Boot para agilizar o desenvolvimento e o deploy."
+        },
+        {
+          "title": "TDD com JUnit",
+          "text": "Apliquei Test-Driven Development com JUnit para manter alta qualidade e facilidade de manutenção do código, com foco em entregar software confiável."
+        },
+        {
+          "title": "Sistemas de chão de fábrica",
+          "text": "Entreguei sistemas de chão de fábrica sob medida para clientes industriais, aumentando a eficiência operacional e apoiando a gestão de dados em tempo real na produção."
+        }
+      ],
+      "achievements": [],
+      "cv": {
+        "role": "Desenvolvedor Full Stack",
+        "org": "Instituto Creathus",
+        "summary": [
+          "Desenvolvi e mantive um sistema de chão de fábrica para clientes industriais do Polo Industrial de Manaus, aumentando a eficiência operacional."
+        ],
+        "technologies": "Spring Boot, ReactJS."
+      }
+    },
+    "apoema": {
+      "summary": "Fábrica de software com sistemas de IoT para o agronegócio",
+      "intro": "A ApoemaFabSoft é uma fábrica de software voltada ao desenvolvimento e à manutenção de sistemas de IoT para o agronegócio, integrando dados em tempo real e gestão de dispositivos.",
+      "role": "Analista de Sistemas",
+      "stack": "Ionic e Firebase",
+      "lead": "Trabalhei bastante com as tecnologias abaixo, principalmente em soluções de IoT para o agronegócio:",
+      "sections": [
+        {
+          "title": "Ionic para PWAs",
+          "text": "Desenvolvi Progressive Web Apps (PWAs) com Ionic, oferecendo uma experiência multiplataforma com foco em desempenho e acessibilidade para sistemas do agronegócio."
+        },
+        {
+          "title": "Firebase",
+          "text": "Usei o Firebase para sincronização de dados em tempo real, autenticação e serviços de backend, criando soluções responsivas e escaláveis para as aplicações de IoT do agronegócio."
+        },
+        {
+          "title": "IoT para o agronegócio",
+          "text": "Implementei sistemas de IoT para o agronegócio, conectando dispositivos e sensores para otimizar processos no campo e melhorar a eficiência operacional."
+        }
+      ],
+      "achievements": [],
+      "cv": {
+        "role": "Analista de Sistemas",
+        "org": "Apoema FabSoft",
+        "summary": [
+          "Atuei no desenvolvimento e na manutenção de um sistema de IoT para o agronegócio, integrando dados em tempo real e gestão de dispositivos."
+        ],
+        "technologies": "Firebase, Ionic, PWA."
+      }
+    },
+    "gesin": {
+      "summary": "Secretaria de Estado de Educação do Amazonas",
+      "intro": "A Secretaria de Estado de Educação (SEDUC) foi criada em 1946 pela Lei nº 1.596, de 5 de janeiro de 1946, com o nome inicial de Diretoria Geral do Departamento de Educação e Cultura. Com a Lei nº 12, de 9 de maio de 1953, veio a primeira mudança de nome, e ela passou a se chamar Departamento de Educação, Cultura e Saúde. No mesmo ano, pela Lei nº 65, de 21 de julho de 1953, passou a Departamento de Educação, Saúde e Assistência Social. Dois anos depois, pela Lei nº 108, de 23 de dezembro de 1955, recebeu o nome de Departamento de Educação e Cultura. Outra mudança veio 36 anos depois, com a Lei nº 2.032, de 2 de maio de 1991, quando passou a se chamar Secretaria de Estado da Educação, Cultura e Desportos. O nome atual, Secretaria de Estado da Educação e Qualidade do Ensino (SEDUC), foi definido pela Lei nº 2.600, de 4 de fevereiro de 2000.",
+      "role": "Desenvolvedor de Sistemas",
+      "stack": "Debian, hospedagem de sites e WordPress",
+      "lead": "Gerenciei, mantive e dei suporte a servidores Linux que hospedavam vários sites institucionais e educacionais. Garanti alta disponibilidade e bom desempenho em produção.",
+      "sections": [],
+      "achievements": [],
+      "cv": {
+        "role": "Desenvolvedor de Sistemas",
+        "org": "Gerência de Sistemas de Informação - SEDUC",
+        "summary": [
+          "Gerenciei, mantive e dei suporte a servidores Linux que hospedavam vários sites institucionais e educacionais.",
+          "Garanti alta disponibilidade e bom desempenho em produção."
+        ],
+        "technologies": "Debian, hospedagem de sites, WordPress."
+      }
+    }
+  },
+  "posts": {
+    "title": "Artigos mais lidos",
+    "inEnglish": "em inglês"
+  },
+  "projects": {
+    "title": "Projetos",
+    "intro": "Projetos pessoais que desenvolvo no meu tempo livre.",
+    "labels": {
+      "motivation": "Por que criei",
+      "goals": "Objetivos",
+      "stack": "Tecnologias",
+      "screenshots": "Telas"
+    },
+    "items": {
+      "guild": {
+        "goal": "Rodar vários agentes de programação ao mesmo tempo, mantendo cada decisão e cada merge nas suas mãos.",
+        "motivation": "Acompanhar um agente é fácil. Vários ao mesmo tempo, não: você perde o controle do que cada um faz e do que decidiu por você. O Guild dá a cada agente seu próprio worktree e sua própria aba, e coloca toda escolha importante numa página local, para eu decidir, não o agente. Todo o estado fica em arquivos simples na minha máquina.",
+        "goals": [
+          "Planos aprovados antes de qualquer código",
+          "Critérios de aceite escritos antes do trabalho e travados",
+          "Revisão independente antes de cada pull request",
+          "Decisões numa página local, em vez de no chat",
+          "Todo o estado em arquivos simples na sua própria máquina"
+        ],
+        "images": [
+          "Mesa de guerra do Guild: página de plano com passos e critérios de aceite (dados de demonstração)",
+          "Quadro de campanha do Guild: missões passando de 'a fazer' para 'concluído' (dados de demonstração)",
+          "Página de encerramento do Guild com evidências do teste e números (dados de demonstração)"
+        ],
+        "note": "O código é público no GitHub, mas ainda não tem licença: é uma ferramenta pessoal, não um produto open source."
+      },
+      "claude-deck": {
+        "goal": "Uma tela de terminal para acompanhar todas as sessões do Claude Code, de todas as suas contas.",
+        "motivation": "Quando várias sessões do Claude Code rodam em abas e contas diferentes, fica difícil saber qual está trabalhando, qual está esperando e quanto cada uma custa. O claude-deck lê os arquivos locais do próprio Claude Code, então não precisa de chave de API e não envia nada pela rede.",
+        "goals": [
+          "Ver sessões ativas e recentes de todas as contas numa só lista",
+          "Mostrar a árvore de agentes, as tarefas e o custo de cada sessão",
+          "Ler uma transcrição colorida e enviar mensagem para uma sessão ativa",
+          "Pular para a aba certa do terminal ou espelhar a tela dela",
+          "Fixar as conversas importantes e retomar as antigas"
+        ],
+        "images": [
+          "Painel do claude-deck com conversas, árvore de agentes, tarefas e estatísticas (dados fictícios)",
+          "claude-deck com conversas fixadas no topo (dados fictícios)",
+          "Transcrição colorida do claude-deck com caixa de mensagem (dados fictícios)"
+        ]
+      },
+      "sr-automation": {
+        "goal": "Um pipeline com LLM que faz a triagem, extrai dados e resume artigos para revisões sistemáticas.",
+        "motivation": "Este é o código da minha dissertação de mestrado em engenharia de software. Uma revisão sistemática exige ler centenas de artigos à mão. O projeto testa até onde um LLM consegue fazer as primeiras etapas e como conferir as respostas dele com um padrão-ouro feito por humanos.",
+        "goals": [
+          "Coletar artigos para uma busca e um intervalo de anos",
+          "Triar cada artigo com resposta SIM ou NÃO",
+          "Extrair dados estruturados dos artigos mantidos",
+          "Escrever um resumo de três frases para cada artigo",
+          "Medir recall, precisão, F1 e Kappa de Cohen contra uma revisão humana"
+        ],
+        "images": [
+          "Diagrama do pipeline: corpus, triagem, extração e resumo",
+          "Página web do SR-Automation com as dez etapas do pipeline"
+        ]
+      },
+      "search-engine-c": {
+        "goal": "Uma máquina de busca em C para documentos históricos da região amazônica, guardados localmente.",
+        "motivation": "Foi um projeto de uma disciplina de recuperação de informação. Ele constrói à mão as partes de uma máquina de busca: um vocabulário com tabela hash, uma lista invertida e um ranking dos documentos pela similaridade com a consulta.",
+        "goals": [
+          "Montar um vocabulário com todos os termos dos documentos",
+          "Montar uma lista invertida que liga cada termo aos seus documentos",
+          "Dar peso aos termos com TF e IDF",
+          "Ordenar os documentos pela similaridade com a consulta",
+          "Rodar numa coleção local de 35 textos históricos"
+        ],
+        "images": [
+          "Saída de terminal de uma busca real em documentos históricos da região amazônica"
+        ]
+      },
+      "my-neovim": {
+        "goal": "Minha configuração do Neovim para desenvolvimento web, baseada no LazyVim.",
+        "motivation": "Eu queria um editor que vivesse no terminal e que eu pudesse guardar num repositório. Ele começou do template inicial do LazyVim, depois adicionei as ferramentas para trabalho web e, mais tarde, depuração de Java e tratamento de conflitos do Git.",
+        "goals": [
+          "Manter toda a configuração do editor em um repositório",
+          "Configurar as ferramentas para desenvolvimento web",
+          "Adicionar depuração de Java (DAP)",
+          "Resolver conflitos do Git dentro do editor",
+          "Trabalhar totalmente pelo terminal"
+        ],
+        "images": []
+      }
+    }
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "text": "A página que você procura não foi encontrada.",
+    "button": "Voltar para o início"
+  },
+  "cv": {
+    "name": "Sesisnando Lagos",
+    "title": "Desenvolvedor Full Stack",
+    "location": "Manaus - AM, Brasil",
+    "sections": {
+      "contact": "Contato",
+      "links": "Links",
+      "skills": "Competências",
+      "languages": "Idiomas",
+      "education": "Formação",
+      "certifications": "Certificações",
+      "profile": "Perfil",
+      "experience": "Experiência profissional",
+      "internship": "Estágio"
+    },
+    "keyTechnologies": "Principais tecnologias",
+    "present": "Atual",
+    "months": [
+      "jan",
+      "fev",
+      "mar",
+      "abr",
+      "mai",
+      "jun",
+      "jul",
+      "ago",
+      "set",
+      "out",
+      "nov",
+      "dez"
+    ],
+    "profile": "Desenvolvedor Full Stack Sênior com mais de 7 anos de experiência em desenvolvimento de software e bancos de dados. Reconhecido pelo profissionalismo ético, pelo trabalho em equipe e pelo excelente relacionamento interpessoal. Tenho uma forma dinâmica de resolver problemas e um compromisso com o aprendizado contínuo e com a mentoria de outros profissionais. Domino frameworks de front-end como Angular e React e tecnologias de back-end como Node.js e Spring Boot. Tenho bom conhecimento de padrões de projeto, metodologias ágeis, testes unitários e automatizados, versionamento de código e gestão de bancos de dados.",
+    "skills": [
+      "Aprendizado rápido",
+      "Gestão do tempo",
+      "Trabalho em equipe",
+      "Empatia",
+      "Boa comunicação",
+      "Resolução de problemas",
+      "Metodologias ágeis",
+      "Automotivação",
+      "Proatividade",
+      "Inovação",
+      "Criatividade",
+      "Gestão de projetos"
+    ],
+    "languages": [
+      {
+        "name": "Português",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglês",
+        "level": "Fluente"
+      },
+      {
+        "name": "Espanhol",
+        "level": "Básico"
+      }
+    ],
+    "education": [
+      {
+        "course": "Engenharia de Software",
+        "school": "Universidade Federal do Amazonas (UFAM)",
+        "date": "Julho de 2019"
+      },
+      {
+        "course": "MBA em Desenvolvimento Web Full Stack",
+        "school": "Instituto de Gestão em Tecnologia da Informação (IGTI)",
+        "date": "Julho de 2021"
+      },
+      {
+        "course": "Mestrado Profissional em Engenharia de Software",
+        "school": "CESAR School",
+        "date": "Em andamento"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Oracle Database SQL Certified Expert - 1z0-047",
+        "issuer": "Oracle"
+      },
+      {
+        "name": "AWS Certified Developer - Associate®",
+        "issuer": "Amazon"
+      },
+      {
+        "name": "Certified Scrum Developer® (CSD®)",
+        "issuer": "Scrum Alliance"
+      },
+      {
+        "name": "Android Enterprise Professional",
+        "issuer": "Google"
+      },
+      {
+        "name": "Curso de Scrum Master",
+        "issuer": "RHF Talentos MDC SP"
+      },
+      {
+        "name": "Curso Completo de Web Moderno com JavaScript",
+        "issuer": "Udemy"
+      },
+      {
+        "name": "Fundamentos de Segurança Web",
+        "issuer": "DevAcademy"
+      }
+    ],
+    "internship": {
+      "role": "Estagiário de Engenharia de Software",
+      "org": "Secretaria de Estado de Educação e Desporto - SEDUC AM",
+      "period": "fev 2017 - jun 2017",
+      "text": "Desenvolvi uma intranet com Drupal para fins educacionais, usada pelos alunos no laboratório da escola."
+    }
+  }
+}

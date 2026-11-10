@@ -2,99 +2,49 @@ import { Container, Heading, SimpleGrid } from "@chakra-ui/react"
 import { WorkGridItem } from "../components/grid-items"
 import Layout from "../components/layouts/article"
 import Section from "../components/section"
+import works from "../data/works.json"
+import { useT } from "../libs/i18n"
+import AppenLogo from "../public/images/logo-appen.png"
+import TjamLogo from "../public/images/logo-tjam.png"
+import ProtexxaLogo from "../public/images/logo-protexxa.png"
+import IngresseLogo from "../public/images/logo-ingresse.png"
 import EldoradoLogo from "../public/images/logo-institute-eldorado.png"
 import CreathusLogo from "../public/images/logo-institute-creathus.png"
-import IngresseLogo from "../public/images/logo-ingresse.png"
-import ProtexxaLogo from "../public/images/logo-protexxa.png"
-import AppenLogo from "../public/images/logo-appen.png"
 import GenericLogo from "../public/images/generic-enterprise.png"
 import SeducLogo from "../public/images/logo-seduc-am.png"
-import TJAM from "../public/images/logo-tjam.png"
+
+const thumbnails = {
+  appen: AppenLogo,
+  tjam: TjamLogo,
+  protexxa: ProtexxaLogo,
+  ingresse: IngresseLogo,
+  eldorado: EldoradoLogo,
+  creathus: CreathusLogo,
+  apoema: GenericLogo,
+  gesin: SeducLogo
+}
 
 const Works = () => {
+  const { t } = useT()
   return (
-    <Layout>
+    <Layout title={t("works.title")}>
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
-          Works
+          {t("works.title")}
         </Heading>
 
         <SimpleGrid columns={[2, 2, 2]} gap={6}>
-          <Section delay={0.3}>
-            <WorkGridItem id="appen" title="Appen" thumbnail={AppenLogo}>
-              A High-Quality data for frontier AI{" "}
-            </WorkGridItem>
-          </Section>
-
-          <Section delay={0.3}>
-            <WorkGridItem id="tjam" title="TJAM" thumbnail={TJAM}>
-              The PROJUDI system, which is one of the main applications for
-              legal Aproceedings in Amazonas.{" "}
-            </WorkGridItem>
-          </Section>
-
-          <Section delay={0.3}>
-            <WorkGridItem
-              id="protexxa"
-              title="Protexxa"
-              thumbnail={ProtexxaLogo}
-            >
-              A global cybersecurity platform & services company{" "}
-            </WorkGridItem>
-          </Section>
-
-          <Section delay={0.3}>
-            <WorkGridItem
-              id="ingresse"
-              title="Ingresse"
-              thumbnail={IngresseLogo}
-            >
-              A Software Solution for events and entertainment in Latin America
-            </WorkGridItem>
-          </Section>
-
-          <Section delay={0.3}>
-            <WorkGridItem
-              id="eldorado"
-              title="Eldorado"
-              thumbnail={EldoradoLogo}
-            >
-              A Research and Development Institute
-            </WorkGridItem>
-          </Section>
-
-          <Section delay={0.3}>
-            <WorkGridItem
-              id="creathus"
-              title="Creathus"
-              thumbnail={CreathusLogo}
-            >
-              A Research and Development Institute
-            </WorkGridItem>
-          </Section>
-
-          <Section delay={0.3}>
-            <WorkGridItem
-              id="apoema"
-              title="ApoemaFabsoft"
-              thumbnail={GenericLogo}
-            >
-              A Sofware Factory on development to IoT systems in agro-business
-              industry
-            </WorkGridItem>
-          </Section>
-
-          <Section delay={0.3}>
-            <WorkGridItem id="gesin" title="GESIN" thumbnail={SeducLogo}>
-              A State Department of Education in Amazonas
-            </WorkGridItem>
-          </Section>
-
-          <Section delay={0.3}>
-            {/* <WorkGridItem id="eldorado" title="Eldorado" thumbnail={EldoradoLogo}>
-            An institute for development research
-          </WorkGridItem> */}
-          </Section>
+          {works.map(work => (
+            <Section key={work.id} delay={0.3}>
+              <WorkGridItem
+                id={work.id}
+                title={work.name}
+                thumbnail={thumbnails[work.id]}
+              >
+                {t(`jobs.${work.id}.summary`)}
+              </WorkGridItem>
+            </Section>
+          ))}
         </SimpleGrid>
       </Container>
     </Layout>

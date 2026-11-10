@@ -1,4 +1,4 @@
-import { ChevronRightIcon } from "@chakra-ui/icons"
+import { ChevronRightIcon, DownloadIcon } from "@chakra-ui/icons"
 import {
   Badge,
   Box,
@@ -21,105 +21,43 @@ import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io"
 import Layout from "../components/layouts/article"
 import Paragraph from "../components/paragraph"
 import Section from "../components/section"
+import { cvHref, useT } from "../libs/i18n"
 
 const MotionBox = motion(Box)
 
 const entries = [
-  {
-    year: "2017",
-    type: "work",
-    role: "Student Intranet Creator",
-    org: "Lab Environment Project"
-  },
-  {
-    year: "2018",
-    type: "edu",
-    role: "B.Sc. in Software Engineering",
-    org: "Federal University of Amazonas (UFAM)"
-  },
-  {
-    year: "2019–2020",
-    type: "work",
-    role: "Information Systems Developer",
-    org: "GESIN / SEDUC-AM"
-  },
-  {
-    year: "2020",
-    type: "work",
-    role: "Fullstack Developer",
-    org: "ApoemaFabSoft"
-  },
-  {
-    year: "2020–2021",
-    type: "work",
-    role: "Fullstack Developer",
-    org: "Creathus Institute"
-  },
-  {
-    year: "2021–2022",
-    type: "edu",
-    role: "MBA in Full-Stack Web Development",
-    org: "IGTI"
-  },
-  {
-    year: "2021–2023",
-    type: "work",
-    role: "Mid-level Fullstack Developer",
-    org: "Eldorado Institute"
-  },
-  {
-    year: "2022–2026",
-    type: "edu",
-    role: "M.Sc. in Software Engineering",
-    org: "Cesar School"
-  },
-  {
-    year: "2023–2025",
-    type: "work",
-    role: "Senior Fullstack Developer — Motorola",
-    org: "Eldorado Institute"
-  },
-  {
-    year: "2024",
-    type: "work",
-    role: "Software Engineer — Ticket Sales",
-    org: "Ingresse"
-  },
-  {
-    year: "2024–2026",
-    type: "work",
-    role: "Senior Software Engineer — Protexxa",
-    org: "Novatics"
-  },
-  {
-    year: "2025–Present",
-    type: "work",
-    role: "Contributor Developer",
-    org: "TJAM",
-    current: true
-  },
-  {
-    year: "2026–Present",
-    type: "work",
-    role: "Senior Software Engineer — Appen",
-    org: "Novatics",
-    current: true
-  }
+  { key: "lab", start: "2017", type: "work" },
+  { key: "ufam", start: "2018", type: "edu" },
+  { key: "gesin", start: "2019", end: "2020", type: "work" },
+  { key: "apoema", start: "2020", type: "work" },
+  { key: "creathus", start: "2020", end: "2021", type: "work" },
+  { key: "igti", start: "2021", end: "2022", type: "edu" },
+  { key: "eldoradoMid", start: "2021", end: "2023", type: "work" },
+  { key: "cesar", start: "2022", end: "2026", type: "edu" },
+  { key: "eldoradoSenior", start: "2023", end: "2025", type: "work" },
+  { key: "ingresse", start: "2024", type: "work" },
+  { key: "protexxa", start: "2024", end: "2026", type: "work" },
+  { key: "tjam", start: "2025", end: "present", type: "work", current: true },
+  { key: "appen", start: "2026", end: "present", type: "work", current: true }
 ]
 
 const typeConfig = {
-  work: { badge: "blue", label: "Work", color: "blue.400" },
-  edu: { badge: "teal", label: "Education", color: "teal.400" }
+  work: { badge: "blue", color: "blue.400" },
+  edu: { badge: "teal", color: "teal.400" }
 }
 
 const TimelineItem = ({ entry, index }) => {
   const spineBg = useColorModeValue("gray.200", "whiteAlpha.200")
-  const yearColor = useColorModeValue("gray.400", "gray.500")
-  const roleColor = useColorModeValue("gray.800", "whiteAlpha.900")
-  const orgColor = useColorModeValue("gray.500", "gray.400")
+  const { t } = useT()
 
-  const { year, type, role, org, current } = entry
-  const { badge, label, color } = typeConfig[type]
+  const { key, start, end, type, current } = entry
+  const { badge, color } = typeConfig[type]
+  const label = t(`home.legend.${type}`)
+  const role = t(`home.timeline.${key}.role`)
+  const org = t(`home.timeline.${key}.org`)
+  const year = end
+    ? `${start}–${end === "present" ? t("home.present") : end}`
+    : start
 
   return (
     <MotionBox
@@ -132,7 +70,7 @@ const TimelineItem = ({ entry, index }) => {
           <Text
             fontSize="10px"
             fontWeight="500"
-            color={yearColor}
+            color="text-muted"
             whiteSpace="nowrap"
             letterSpacing="0.03em"
           >
@@ -164,12 +102,12 @@ const TimelineItem = ({ entry, index }) => {
           <Text
             fontSize="sm"
             fontWeight="500"
-            color={roleColor}
+            color="text-strong"
             lineHeight="1.4"
           >
             {role}
           </Text>
-          <Text fontSize="xs" color={orgColor} mt="1px">
+          <Text fontSize="xs" color="text-muted" mt="1px">
             {org}
           </Text>
         </Box>
@@ -180,7 +118,7 @@ const TimelineItem = ({ entry, index }) => {
 
 const BioTimeline = () => {
   const borderColor = useColorModeValue("gray.200", "whiteAlpha.200")
-  const labelColor = useColorModeValue("gray.400", "gray.500")
+  const { t } = useT()
 
   return (
     <Box>
@@ -194,8 +132,8 @@ const BioTimeline = () => {
         {Object.entries(typeConfig).map(([key, cfg]) => (
           <Flex key={key} align="center" gap={1.5}>
             <Circle size="8px" bg={cfg.color} />
-            <Text fontSize="11px" color={labelColor}>
-              {cfg.label}
+            <Text fontSize="11px" color="text-muted">
+              {t(`home.legend.${key}`)}
             </Text>
           </Flex>
         ))}
@@ -210,6 +148,7 @@ const BioTimeline = () => {
 }
 
 const Page = () => {
+  const { t, locale } = useT()
   return (
     <Layout>
       <Container>
@@ -220,8 +159,7 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hi there! I&apos;m a passionate full-stack developer from Brazil,
-          dedicated to crafting impactful software solutions.
+          {t("home.greeting")}
         </Box>
 
         <Box display={{ md: "flex" }}>
@@ -229,7 +167,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Sesisnando Rodrigues
             </Heading>
-            <p>(Full Stack Engineer)</p>
+            <p>({t("home.role")})</p>
           </Box>
           <Box
             flexShrink={0}
@@ -245,55 +183,55 @@ const Page = () => {
               display="inline-block"
               borderRadius="full"
               src="/images/sesisnando.jpeg"
-              alt="Sesisnando"
+              alt={t("home.photoAlt")}
             />
           </Box>
         </Box>
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Profile
+            {t("home.profileTitle")}
           </Heading>
-          <Paragraph>
-            Sesisnando is a dedicated Software Engineer and full-stack developer
-            with a deep passion for creating impactful digital solutions. He
-            believes in the power of code to make a difference and enjoys
-            tackling challenges head-on. When he&apos;s not coding, you&apos;ll
-            find him playing games or spending quality time with friends.
-          </Paragraph>
-          <Box align="center" my={4}>
+          <Paragraph>{t("home.profile")}</Paragraph>
+          <Flex justify="center" gap={3} my={4} wrap="wrap">
             <Button
               as={NextLink}
               href="/works"
               rightIcon={<ChevronRightIcon />}
               colorScheme="teal"
             >
-              My portifolio
+              {t("home.portfolioButton")}
             </Button>
-          </Box>
+            <Button
+              as="a"
+              href={cvHref(locale)}
+              download
+              leftIcon={<DownloadIcon />}
+              colorScheme="teal"
+              variant="outline"
+            >
+              {t("home.cvButton")}
+            </Button>
+          </Flex>
         </Section>
 
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
-            Bio
+            {t("home.bioTitle")}
           </Heading>
           <BioTimeline />
         </Section>
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            I &#9829;
+            {t("home.loveTitle")}
           </Heading>
-          <Paragraph>
-            When I&apos;m not coding, I love diving into the world of heavy
-            metal, playing guitar, exploring new technologies using AI and
-            enjoying RPG and Board Games with friends.
-          </Paragraph>
+          <Paragraph>{t("home.love")}</Paragraph>
         </Section>
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            On the page
+            {t("home.onTheWebTitle")}
           </Heading>
           <List>
             <ListItem>
@@ -303,7 +241,7 @@ const Page = () => {
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
-                  SesinandoLRNeto
+                  SesisnandoLRNeto
                 </Button>
               </Link>
             </ListItem>
