@@ -22,7 +22,7 @@
     "es": "Español"
   },
   "home": {
-    "greeting": "Olá! Sou um desenvolvedor full stack apaixonado pelo que faz, do Brasil, dedicado a criar software que gera impacto.",
+    "greeting": "Olá! Sou um desenvolvedor full stack brasileiro, apaixonado pelo que faço e dedicado a criar software que gera impacto.",
     "role": "Engenheiro Full Stack",
     "photoAlt": "Sesisnando",
     "profileTitle": "Perfil",
@@ -204,7 +204,7 @@
     },
     "ingresse": {
       "summary": "Solução de software para eventos e entretenimento na América Latina",
-      "intro": "A Ingresse é a empresa líder em tecnologia e soluções para eventos e entretenimento na América Latina. Com inovação, segurança digital e um profundo conhecimento do mercado de entretenimento, conectamos nossos clientes ao que realmente importa: pessoas e histórias. Com mais de 10 anos de experiência no mercado brasileiro, construímos um portfólio com grandes nomes do entretenimento no país e vendemos ingressos para os maiores réveillons, Carnaval, festivais, festas de selo e casas noturnas. Garantimos nosso alto padrão de segurança, atendimento e acesso sem complicação para mais de 5 mil produtores e 5,5 milhões de usuários na América Latina. Queremos levar essa experiência em entretenimento e venda de ingressos para além das nossas fronteiras. A chegada da Ingresse à Espanha e ao Uruguai marca o início da nossa operação mundial.",
+      "intro": "A Ingresse é a empresa líder em tecnologia e soluções para eventos e entretenimento na América Latina. Com inovação, segurança digital e um profundo conhecimento do mercado de entretenimento, conectamos nossos clientes ao que realmente importa: pessoas e histórias. Com mais de 10 anos de experiência no mercado brasileiro, construímos um portfólio com grandes nomes do entretenimento no país e vendemos ingressos para os maiores réveillons, Carnaval, festivais, festas de marcas e casas noturnas. Garantimos nosso alto padrão de segurança, atendimento e acesso sem complicação para mais de 5 mil produtores e 5,5 milhões de usuários na América Latina. Queremos levar essa experiência em entretenimento e venda de ingressos para além das nossas fronteiras. A chegada da Ingresse à Espanha e ao Uruguai marca o início da nossa operação mundial.",
       "role": "Desenvolvedor Front-end Sênior",
       "stack": "Angular e React",
       "lead": "Tive experiência prática com várias tecnologias, principalmente no desenvolvimento de sistemas de venda de ingressos para eventos.",
@@ -240,7 +240,7 @@
       "intro": "Atuamos nas áreas de software, hardware, microeletrônica, testes e ensaios, educação e consultoria, criando e executando projetos e soluções focados em tecnologia e inovação. O primeiro passo foi dado em 1999 e hoje já somos mais de mil colaboradores em quatro unidades pelo Brasil, em Brasília, Campinas, Manaus e Porto Alegre. Além de contribuir para a transformação digital das empresas, nosso propósito é desenvolver o ecossistema tecnológico do país, com foco em projetos de Inovação Aberta. Criamos soluções disruptivas para mercados como TI/Telecom, Energia, Agronegócio, Óleo e Gás, Saúde, Automotivo, entre outros, e temos casos de sucesso em tecnologias emergentes como Inteligência Artificial, Visão Computacional, Computação Gráfica, Realidade Virtual e Aumentada, Assistentes Virtuais e Interface de Voz, Big Data e Analytics, Sistemas Embarcados, IoT e Blockchain. Ao longo desses anos, formamos e fortalecemos uma ampla carteira de clientes, que inclui grandes empresas nacionais e internacionais, além de estarmos sempre presentes nos rankings das melhores empresas para trabalhar no Brasil.",
       "role": "Desenvolvedor Full Stack Sênior",
       "stack": "Node.js, Angular e AWS",
-      "lead": "Trabalhei com Angular e Node.js, usando um conjunto amplo de metodologias e ferramentas para entregar software de alta qualidade. Meu foco atual é o desenvolvimento de um sistema de Gerenciamento de Mobilidade Empresarial (EMM), que envolve CI/CD, boas práticas de código e papéis de liderança como Chapter Lead. Minha abordagem inclui:",
+      "lead": "Trabalhei com Angular e Node.js, usando um conjunto amplo de metodologias e ferramentas para entregar software de alta qualidade. Meu foco era o desenvolvimento de um sistema de Gerenciamento de Mobilidade Empresarial (EMM), que envolve CI/CD, boas práticas de código e papéis de liderança como Chapter Lead. Minha abordagem inclui:",
       "sections": [
         {
           "title": "Metodologias ágeis",
@@ -279,7 +279,7 @@
       ],
       "cv": {
         "role": "Desenvolvedor Full Stack Sênior",
-        "org": "Instituto de P&D Eldorado",
+        "org": "Instituto Eldorado",
         "summary": [
           "Liderei o desenvolvimento e a manutenção de uma aplicação web de Gerenciamento de Mobilidade Empresarial, com a Motorola como principal cliente.",
           "Conquistas: otimizei custos de nuvem e o desempenho de funcionalidades importantes, participei de toda a migração da arquitetura para microfrontends e recebi o prêmio de excelência do instituto em 2022."
@@ -386,18 +386,18 @@
     },
     "items": {
       "guild": {
-        "goal": "Rodar vários agentes de código ao mesmo tempo, mantendo cada decisão e cada merge nas suas mãos.",
+        "goal": "Rodar vários agentes de programação ao mesmo tempo, mantendo cada decisão e cada merge nas suas mãos.",
         "motivation": "Acompanhar um agente é fácil. Vários ao mesmo tempo, não: você perde o controle do que cada um faz e do que decidiu por você. O Guild dá a cada agente seu próprio worktree e sua própria aba, e coloca toda escolha importante numa página local, para eu decidir, não o agente. Todo o estado fica em arquivos simples na minha máquina.",
         "goals": [
           "Planos aprovados antes de qualquer código",
-          "Verificações de aceite escritas antes e seladas",
+          "Critérios de aceite escritos antes do trabalho e travados",
           "Revisão independente antes de cada pull request",
           "Decisões numa página local, em vez de no chat",
           "Todo o estado em arquivos simples na sua própria máquina"
         ],
         "images": [
-          "Mesa de guerra do Guild: página de plano com passos e verificações de aceite (dados de demonstração)",
-          "Quadro de campanha do Guild: missões indo de a fazer até concluídas (dados de demonstração)",
+          "Mesa de guerra do Guild: página de plano com passos e critérios de aceite (dados de demonstração)",
+          "Quadro de campanha do Guild: missões passando de 'a fazer' para 'concluído' (dados de demonstração)",
           "Página de encerramento do Guild com evidências do teste e números (dados de demonstração)"
         ],
         "note": "O código é público no GitHub, mas ainda não tem licença: é uma ferramenta pessoal, não um produto open source."
@@ -435,12 +435,12 @@
       },
       "search-engine-c": {
         "goal": "Uma máquina de busca em C para documentos históricos da região amazônica, guardados localmente.",
-        "motivation": "Foi um projeto de uma disciplina de recuperação de informação. Ele constrói à mão as partes de uma máquina de busca: um vocabulário com tabela hash, uma lista invertida e um ranking dos documentos pela semelhança com a consulta.",
+        "motivation": "Foi um projeto de uma disciplina de recuperação de informação. Ele constrói à mão as partes de uma máquina de busca: um vocabulário com tabela hash, uma lista invertida e um ranking dos documentos pela similaridade com a consulta.",
         "goals": [
           "Montar um vocabulário com todos os termos dos documentos",
           "Montar uma lista invertida que liga cada termo aos seus documentos",
           "Dar peso aos termos com TF e IDF",
-          "Ordenar os documentos pela semelhança com a consulta",
+          "Ordenar os documentos pela similaridade com a consulta",
           "Rodar numa coleção local de 35 textos históricos"
         ],
         "images": [
@@ -449,7 +449,7 @@
       },
       "my-neovim": {
         "goal": "Minha configuração do Neovim para desenvolvimento web, baseada no LazyVim.",
-        "motivation": "Eu queria um editor que viva no terminal e que eu possa guardar num repositório. Ele começou do template inicial do LazyVim, depois adicionei as ferramentas para trabalho web e, mais tarde, depuração de Java e tratamento de conflitos do Git.",
+        "motivation": "Eu queria um editor que vivesse no terminal e que eu pudesse guardar num repositório. Ele começou do template inicial do LazyVim, depois adicionei as ferramentas para trabalho web e, mais tarde, depuração de Java e tratamento de conflitos do Git.",
         "goals": [
           "Manter toda a configuração do editor em um repositório",
           "Configurar as ferramentas para desenvolvimento web",
@@ -497,15 +497,15 @@
       "nov",
       "dez"
     ],
-    "profile": "Desenvolvedor Full Stack Sênior com mais de 7 anos de experiência em desenvolvimento de software e bancos de dados. Reconhecido pelo profissionalismo ético, pelo trabalho em equipe e pela ótima relação com as pessoas. Tenho uma forma dinâmica de resolver problemas e um compromisso com o aprendizado contínuo e com a mentoria de outros profissionais. Domino frameworks de front-end como Angular e React e tecnologias de back-end como Node.js e Spring Boot. Tenho bom conhecimento de padrões de projeto, metodologias ágeis, testes unitários e automatizados, versionamento de código e gestão de bancos de dados.",
+    "profile": "Desenvolvedor Full Stack Sênior com mais de 7 anos de experiência em desenvolvimento de software e bancos de dados. Reconhecido pelo profissionalismo ético, pelo trabalho em equipe e pelo excelente relacionamento interpessoal. Tenho uma forma dinâmica de resolver problemas e um compromisso com o aprendizado contínuo e com a mentoria de outros profissionais. Domino frameworks de front-end como Angular e React e tecnologias de back-end como Node.js e Spring Boot. Tenho bom conhecimento de padrões de projeto, metodologias ágeis, testes unitários e automatizados, versionamento de código e gestão de bancos de dados.",
     "skills": [
-      "Aprendo rápido",
+      "Aprendizado rápido",
       "Gestão do tempo",
       "Trabalho em equipe",
       "Empatia",
       "Boa comunicação",
       "Resolução de problemas",
-      "Métodos ágeis",
+      "Metodologias ágeis",
       "Automotivação",
       "Proatividade",
       "Inovação",
