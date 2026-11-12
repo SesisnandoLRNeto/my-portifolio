@@ -15,10 +15,25 @@
         "src": "/images/projects/guild/plan.webp"
       },
       {
+        "src": "/images/projects/guild/docket.webp"
+      },
+      {
+        "src": "/images/projects/guild/decision.webp"
+      },
+      {
         "src": "/images/projects/guild/campaign.webp"
       },
       {
+        "src": "/images/projects/guild/map-room.webp"
+      },
+      {
         "src": "/images/projects/guild/wrapup.webp"
+      },
+      {
+        "src": "/images/projects/guild/treasury.webp"
+      },
+      {
+        "src": "/images/projects/guild/heroes.webp"
       }
     ]
   },

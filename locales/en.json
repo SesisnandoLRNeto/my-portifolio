@@ -21,7 +21,7 @@
     "es": "Español"
   },
   "home": {
-    "greeting": "Hi there! I'm a passionate full-stack developer from Brazil, dedicated to crafting impactful software solutions.",
+    "greeting": "Hi there! I'm a full-stack developer from Brazil, living in Spain as a digital nomad since October 2026, dedicated to crafting impactful software solutions.",
     "role": "Full Stack Engineer",
     "photoAlt": "Sesisnando",
     "profileTitle": "Profile",
@@ -390,13 +390,21 @@
           "Plans approved before any code is written",
           "Acceptance checks written first and sealed",
           "An independent review before every pull request",
-          "Decisions on a local page instead of in chat",
+          "One docket page with every decision waiting for me, also on the phone",
+          "A campaign board per ticket and a map room with every changed file",
+          "A treasury with what each model really cost, and a hall of heroes where each model levels up",
+          "A default and a fallback model for each kind of task",
           "All state in plain files on your own machine"
         ],
         "images": [
           "Guild war table: a plan page with steps and acceptance checks (demo data)",
+          "The docket: every plan, decision and report waiting for me, in one list (demo data)",
+          "A decision board: options side by side, with the suggested one marked (demo data)",
           "Guild campaign board: quests moving from to-do to done (demo data)",
-          "Guild wrap-up page with trial evidence and numbers (demo data)"
+          "The map room: every changed file, with the changes marked (demo data)",
+          "Guild wrap-up page with trial evidence and numbers (demo data)",
+          "The treasury: what the work cost per day and per model",
+          "The hall of heroes: each model is an RPG character that levels up with its quests"
         ],
         "note": "The code is public on GitHub but has no license yet: it is a personal tool, not an open source product."
       },
@@ -467,7 +475,7 @@
   "cv": {
     "name": "Sesisnando Lagos",
     "title": "Full Stack Developer",
-    "location": "Manaus - AM, Brazil",
+    "location": "Spain (digital nomad, since Oct 2026)",
     "sections": {
       "contact": "Contact",
       "links": "Links",

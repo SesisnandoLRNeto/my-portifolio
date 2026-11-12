@@ -21,11 +21,11 @@
     "es": "Español"
   },
   "home": {
-    "greeting": "Olá! Sou um desenvolvedor full stack brasileiro, apaixonado pelo que faço e dedicado a criar software que gera impacto.",
+    "greeting": "Olá! Sou um desenvolvedor full stack brasileiro, morando na Espanha como nômade digital desde outubro de 2026, dedicado a criar software que gera impacto.",
     "role": "Engenheiro Full Stack",
     "photoAlt": "Sesisnando",
     "profileTitle": "Perfil",
-    "profile": "Sesisnando é um Engenheiro de Software e desenvolvedor full stack dedicado, com uma grande paixão por criar soluções digitais que fazem diferença. Ele acredita no poder do código para mudar as coisas e gosta de encarar desafios de frente. Quando não está programando, está jogando ou passando um bom tempo com os amigos.",
+    "profile": "Sesisnando é um Engenheiro de Software e desenvolvedor full stack dedicado, com uma grande paixão por criar soluções digitais que fazem diferença. Ele acredita no poder do código para mudar as coisas e gosta de encarar desafios de frente. Quando não está programando, está jogando ou passando um bom tempo com os amigos. Desde outubro de 2026 mora na Espanha e trabalha remoto como nômade digital.",
     "portfolioButton": "Meu portfólio",
     "cvButton": "Baixar meu currículo",
     "bioTitle": "Trajetória",
@@ -390,13 +390,21 @@
           "Planos aprovados antes de qualquer código",
           "Critérios de aceite escritos antes do trabalho e travados",
           "Revisão independente antes de cada pull request",
-          "Decisões numa página local, em vez de no chat",
+          "Uma página (docket) com cada decisão esperando por mim, também no celular",
+          "Um quadro de campanha por ticket e uma sala de mapas com cada arquivo alterado",
+          "Um tesouro com quanto cada modelo custou de verdade, e um salão de heróis onde cada modelo sobe de nível",
+          "Um modelo padrão e um reserva para cada tipo de tarefa",
           "Todo o estado em arquivos simples na sua própria máquina"
         ],
         "images": [
           "Mesa de guerra do Guild: página de plano com passos e critérios de aceite (dados de demonstração)",
+          "O docket: cada plano, decisão e relatório esperando por mim, numa lista só (dados de demonstração)",
+          "Um quadro de decisão: opções lado a lado, com a sugerida marcada (dados de demonstração)",
           "Quadro de campanha do Guild: missões passando de 'a fazer' para 'concluído' (dados de demonstração)",
-          "Página de encerramento do Guild com evidências do teste e números (dados de demonstração)"
+          "A sala de mapas: cada arquivo alterado, com as mudanças marcadas (dados de demonstração)",
+          "Página de encerramento do Guild com evidências do teste e números (dados de demonstração)",
+          "O tesouro: quanto o trabalho custou por dia e por modelo",
+          "O salão dos heróis: cada modelo é um personagem de RPG que sobe de nível com suas missões"
         ],
         "note": "O código é público no GitHub, mas ainda não tem licença: é uma ferramenta pessoal, não um produto open source."
       },
@@ -467,7 +475,7 @@
   "cv": {
     "name": "Sesisnando Lagos",
     "title": "Desenvolvedor Full Stack",
-    "location": "Manaus - AM, Brasil",
+    "location": "Espanha (nômade digital, desde out. 2026)",
     "sections": {
       "contact": "Contato",
       "links": "Links",

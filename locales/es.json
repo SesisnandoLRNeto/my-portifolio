@@ -21,7 +21,7 @@
     "es": "Español"
   },
   "home": {
-    "greeting": "¡Hola! Soy un desarrollador full stack brasileño, apasionado por lo que hago y dedicado a crear software que genera impacto.",
+    "greeting": "¡Hola! Soy un desarrollador full stack brasileño, viviendo en España como nómada digital desde octubre de 2026, dedicado a crear software que genera impacto.",
     "role": "Ingeniero Full Stack",
     "photoAlt": "Sesisnando",
     "profileTitle": "Perfil",
@@ -390,13 +390,21 @@
           "Planes aprobados antes de escribir código",
           "Criterios de aceptación escritos antes del trabajo y bloqueados",
           "Una revisión independiente antes de cada pull request",
-          "Decisiones en una página local en lugar del chat",
+          "Una página (docket) con cada decisión que me espera, también en el móvil",
+          "Un tablero de campaña por ticket y una sala de mapas con cada archivo cambiado",
+          "Un tesoro con lo que cada modelo costó de verdad, y una sala de héroes donde cada modelo sube de nivel",
+          "Un modelo por defecto y uno de reserva para cada tipo de tarea",
           "Todo el estado en archivos simples en tu propia máquina"
         ],
         "images": [
           "Mesa de guerra de Guild: página de plan con pasos y criterios de aceptación (datos de demostración)",
+          "El docket: cada plan, decisión e informe que me espera, en una sola lista (datos de demostración)",
+          "Un tablero de decisión: opciones lado a lado, con la sugerida marcada (datos de demostración)",
           "Tablero de campaña de Guild: misiones que pasan de pendientes a terminadas (datos de demostración)",
-          "Página de cierre de Guild con evidencias de la prueba y números (datos de demostración)"
+          "La sala de mapas: cada archivo cambiado, con los cambios marcados (datos de demostración)",
+          "Página de cierre de Guild con evidencias de la prueba y números (datos de demostración)",
+          "El tesoro: lo que costó el trabajo por día y por modelo",
+          "La sala de héroes: cada modelo es un personaje de RPG que sube de nivel con sus misiones"
         ],
         "note": "El código es público en GitHub, pero todavía no tiene licencia: es una herramienta personal, no un producto de código abierto."
       },
@@ -467,7 +475,7 @@
   "cv": {
     "name": "Sesisnando Lagos",
     "title": "Desarrollador Full Stack",
-    "location": "Manaos - AM, Brasil",
+    "location": "España (nómada digital, desde oct. 2026)",
     "sections": {
       "contact": "Contacto",
       "links": "Enlaces",
