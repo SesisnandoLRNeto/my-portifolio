@@ -12,6 +12,12 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
         className="grid-item-thumbnail"
         placeholder="blur"
         loading="lazy"
+        style={{
+          width: "100%",
+          aspectRatio: "16 / 9",
+          objectFit: "cover",
+          objectPosition: "top"
+        }}
       />
       <LinkOverlay href={href} target="_blank">
         <Text mt={2}>{title}</Text>
