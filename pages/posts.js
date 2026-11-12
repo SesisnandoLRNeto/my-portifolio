@@ -6,6 +6,7 @@ import Section from "../components/section"
 
 import thumbnailBloomTaxonomy from "../public/images/deepen-learning.png"
 import thumbnailAiWritting from "../public/images/AI.jpeg"
+import thumbnailGuild from "../public/images/projects/guild/heroes.webp"
 import { useT } from "../libs/i18n"
 
 const Posts = () => {
@@ -25,6 +26,15 @@ const Posts = () => {
 
         <Section delay={0.1}>
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
+            <Section delay={0.3}>
+              <GridItem
+                title="I Turned My AI Coding Agents Into an RPG Guild"
+                thumbnail={thumbnailGuild}
+                href="https://medium.com/@nandolrneto/i-turned-my-ai-coding-agents-into-an-rpg-guild-bb354e5a5e85"
+              >
+                {tag}
+              </GridItem>
+            </Section>
             <Section delay={0.3}>
               <GridItem
                 title="A Step-by-Step Approach to Master Complex Topics"
