@@ -47,6 +47,22 @@ const Project = ({ id }) => {
               <ExternalLinkIcon mx="2px" />
             </Link>
           </Box>
+          {project.article && (
+            <Box mt={1}>
+              <Meta>{t("projects.labels.article")}</Meta>
+              <Link href={project.article} isExternal>
+                Medium <ExternalLinkIcon mx="2px" />
+              </Link>
+            </Box>
+          )}
+          {project.post && (
+            <Box mt={1}>
+              <Meta>{t("projects.labels.post")}</Meta>
+              <Link href={project.post} isExternal>
+                LinkedIn <ExternalLinkIcon mx="2px" />
+              </Link>
+            </Box>
+          )}
           <Box mt={1}>
             <Meta>{t("projects.labels.stack")}</Meta>
             <span>{project.stack.join(", ")}</span>

@@ -380,7 +380,9 @@
       "motivation": "Why I built it",
       "goals": "Goals",
       "stack": "Stack",
-      "screenshots": "Screenshots"
+      "screenshots": "Screenshots",
+      "article": "Article",
+      "post": "LinkedIn post"
     },
     "items": {
       "guild": {

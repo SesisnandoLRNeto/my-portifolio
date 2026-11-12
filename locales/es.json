@@ -380,7 +380,9 @@
       "motivation": "Por qué lo creé",
       "goals": "Objetivos",
       "stack": "Tecnologías",
-      "screenshots": "Capturas de pantalla"
+      "screenshots": "Capturas de pantalla",
+      "article": "Artículo",
+      "post": "Publicación en LinkedIn"
     },
     "items": {
       "guild": {
